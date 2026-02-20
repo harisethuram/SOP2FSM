@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}{{ sop.title or sop_id }} — SOP Builder{% endblock %}
+{% block content %}
+<div class="sop-view-card">
+  <div class="sop-view-header">
+    <h1>{{ sop.title or sop_id }}</h1>
+    <p class="sop-meta">by {{ sop_username }} · {{ sop.states|length }} states</p>
+  </div>
+  <div class="flow-wrap">
+    <div class="mermaid-wrap">
+      <pre class="mermaid">{{ sop | sop_mermaid }}</pre>
+    </div>
+  </div>
+  <div class="states-detail">
+    <h2>States</h2>
+    <ul class="state-cards">
+      {% for s in sop.states %}
+      <li class="state-card {% if s.is_start %}start{% endif %} {% if s.is_end %}end{% endif %}">
+        <div class="state-id">{{ s.state_id }}</div>
+        {% if s.check_id %}
+        <div class="state-check">
+          <strong>Check</strong> ({{ s.check_id }}): {{ checks.get(s.check_id, {}).get('check_text', '—') }}
+        </div>
+        {% endif %}
+        {% if s.transition_function_description %}
+        <div class="state-trans"><strong>Transition:</strong> {{ s.transition_function_description }}</div>
+        {% endif %}
+        {% if s.next_state_ids %}
+        <div class="state-next"><strong>Next:</strong> {{ s.next_state_ids | join(', ') }}</div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    flowchart: { useMaxWidth: true, htmlLabels: true },
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#e8f4f0',
+      primaryTextColor: '#1a2e28',
+      primaryBorderColor: '#2d5a4a',
+      lineColor: '#4a7c6f',
+      secondaryColor: '#f5f0e8',
+      tertiaryColor: '#fce8e8'
+    }
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Home — SOP Builder{% endblock %}
+{% block content %}
+<div class="home-card">
+  <h1>Welcome, {{ username }}</h1>
+  <p class="lead">Create and visualize Standard Operating Procedures as workflow graphs.</p>
+  <div class="action-grid">
+    <a href="{{ url_for('view_all_sops') }}" class="action-box">
+      <span class="action-icon">📋</span>
+      <h2>View All SOPs</h2>
+      <p>Browse all SOPs from all users. Open any to see its flowchart.</p>
+    </a>
+    <a href="{{ url_for('create_sop') }}" class="action-box">
+      <span class="action-icon">➕</span>
+      <h2>Create SOP</h2>
+      <p>Define a new SOP and add states one by one with duplicate detection.</p>
+    </a>
+  </div>
+</div>
+{% endblock %}

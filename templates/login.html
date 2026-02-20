@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Login — SOP Builder{% endblock %}
+{% block content %}
+<div class="auth-card">
+  <h1>SOP Builder</h1>
+  <p class="tagline">Standard Operating Procedures as directed graphs</p>
+  <form method="post" class="auth-form">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required autofocus placeholder="Enter your name">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="(any password for demo)">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+</div>
+{% endblock %}

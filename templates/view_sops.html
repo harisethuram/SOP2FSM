@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}All SOPs — SOP Builder{% endblock %}
+{% block content %}
+<div class="sops-list-card">
+  <h1>All SOPs</h1>
+  <p class="sub">Click an SOP to view its flowchart.</p>
+  {% if not sops %}
+  <p class="empty">No SOPs yet. <a href="{{ url_for('create_sop') }}">Create one</a>.</p>
+  {% else %}
+  <ul class="sop-tiles">
+    {% for username, sop_id, data in sops %}
+    <li>
+      <a href="{{ url_for('view_sop', username=username, sop_id=sop_id) }}" class="sop-tile">
+        <span class="sop-title">{{ data.get('title') or sop_id }}</span>
+        <span class="sop-meta">by {{ username }} · {{ (data.get('states')|length or 0) }} states</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+{% endblock %}
