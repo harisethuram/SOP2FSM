@@ -5,7 +5,6 @@ A local web app to create and visualize **Standard Operating Procedures (SOPs)**
 ## Setup
 
 ```bash
-cd c:\DevCode\503_project
 pip install -r requirements.txt
 ```
 
@@ -38,3 +37,4 @@ Open [http://127.0.0.1:5000](http://127.0.0.1:5000). Log in with any username (p
 - `data/<username>/sops/<sop_id>.yaml` — One SOP file per user/SOP.
 
 See `design.md` for the full specification.
+
