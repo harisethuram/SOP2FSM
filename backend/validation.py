@@ -16,11 +16,6 @@ def validate_new_state(sop_states: list, state_id: str, is_start: bool, is_end: 
         errors.append("This SOP already has a start state; you cannot add another.")
     if is_end and next_state_ids:
         errors.append("End states must not have any next states.")
-    # All next_state_ids must exist in SOP (we allow END_* as logical refs; they may be added later)
-    valid_next = set(state_ids) | {"END_SUCCESS", "END_INVALID", "END_UNAUTHORIZED"}
-    for nid in next_state_ids:
-        if nid and nid not in valid_next:
-            errors.append(f"next_state_id '{nid}' is not yet in this SOP.")
     return errors
 
 
@@ -28,7 +23,7 @@ def check_duplicate_check_id(check_id: str) -> bool:
     return data_store.get_check_by_id(check_id) is not None
 
 
-def get_similar_checks(check_text: str, threshold: float = 0.95):
+def get_similar_checks(check_text: str, threshold: float = 0.80):
     """Return list of (check_dict, similarity) for existing checks above threshold."""
     similar = embeddings.find_similar_check_ids(check_text, threshold)
     checks = data_store.load_check_ids()

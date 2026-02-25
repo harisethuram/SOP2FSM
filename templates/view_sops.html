@@ -8,11 +8,11 @@
   <p class="empty">No SOPs yet. <a href="{{ url_for('create_sop') }}">Create one</a>.</p>
   {% else %}
   <ul class="sop-tiles">
-    {% for username, sop_id, data in sops %}
+    {% for sop_id, data in sops %}
     <li>
-      <a href="{{ url_for('view_sop', username=username, sop_id=sop_id) }}" class="sop-tile">
+      <a href="{{ url_for('view_sop', sop_id=sop_id) }}" class="sop-tile">
         <span class="sop-title">{{ data.get('title') or sop_id }}</span>
-        <span class="sop-meta">by {{ username }} · {{ (data.get('states')|length or 0) }} states</span>
+        <span class="sop-meta">{{ (data.get('states')|length or 0) }} states</span>
       </a>
     </li>
     {% endfor %}

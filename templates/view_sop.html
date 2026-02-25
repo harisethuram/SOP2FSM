@@ -4,7 +4,7 @@
 <div class="sop-view-card">
   <div class="sop-view-header">
     <h1>{{ sop.title or sop_id }}</h1>
-    <p class="sop-meta">by {{ sop_username }} · {{ sop.states|length }} states</p>
+    <p class="sop-meta">{{ sop.states|length }} states</p>
   </div>
   <div class="flow-wrap">
     <div class="mermaid-wrap">

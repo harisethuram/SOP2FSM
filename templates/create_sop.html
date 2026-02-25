@@ -4,7 +4,6 @@
 <div class="create-sop-card">
   <h1>Create SOP</h1>
 
-  {% if not draft.sop_id %}
   <section class="create-form-section">
     <h2>New SOP</h2>
     <form method="post" class="sop-form">
@@ -16,113 +15,5 @@
       <button type="submit" class="btn btn-primary">Create SOP</button>
     </form>
   </section>
-  {% else %}
-
-  <section class="draft-info">
-    <p><strong>SOP:</strong> {{ draft.sop_id }} — {{ draft.title or '(no title)' }}</p>
-  </section>
-
-  {% if similar_checks or duplicate_check_id %}
-  <section class="confirm-section">
-    <h2>Similar or duplicate check</h2>
-    <p>We found an existing check with the same <code>check_id</code> or very similar text. Choose one:</p>
-    {% if similar_checks %}
-    <form method="post" class="confirm-form">
-      <input type="hidden" name="action" value="confirm_accept">
-      <ul class="similar-list">
-        {% for check, sim in similar_checks %}
-        <li>
-          <label class="similar-item">
-            <input type="radio" name="accepted_check_id" value="{{ check.check_id }}">
-            <span><strong>{{ check.check_id }}</strong> — {{ check.check_text }}{% if sim >= 1.0 %} (duplicate ID){% else %} (similarity: {{ "%.2f"|format(sim) }}){% endif %}</span>
-          </label>
-        </li>
-        {% endfor %}
-      </ul>
-      <button type="submit" class="btn btn-secondary">Use selected check</button>
-    </form>
-    {% endif %}
-    {% if duplicate_check_id %}
-    <p class="note">The <code>check_id</code> you entered already exists. Either pick an existing check above or proceed with a <em>different</em> check_id.</p>
-    {% endif %}
-    <form method="post" class="confirm-form">
-      <input type="hidden" name="action" value="confirm_proceed">
-      <button type="submit" class="btn btn-outline">Proceed with new check (use a unique check_id)</button>
-    </form>
-  </section>
-  {% endif %}
-
-  <section class="add-state-section">
-    <h2>Add state</h2>
-    <form method="post" class="state-form" id="add-state-form">
-      <input type="hidden" name="action" value="add_state">
-      <div class="form-row">
-        <label>Role</label>
-        <div class="radio-group">
-          <label><input type="radio" name="role" value="neither" checked> Neither</label>
-          <label><input type="radio" name="role" value="start"> Start</label>
-          <label><input type="radio" name="role" value="end"> End</label>
-        </div>
-      </div>
-      <div class="form-row">
-        <label for="state_id">State ID</label>
-        <input type="text" id="state_id" name="state_id" required placeholder="e.g. token_validity">
-      </div>
-      <div class="form-row state-only-fields">
-        <label for="check_id">Check ID</label>
-        <input type="text" id="check_id" name="check_id" placeholder="e.g. verify_token">
-      </div>
-      <div class="form-row state-only-fields">
-        <label for="check_text">Check text</label>
-        <textarea id="check_text" name="check_text" rows="2" placeholder="e.g. Verify that the token is valid"></textarea>
-      </div>
-      <div class="form-row state-only-fields">
-        <label for="transition_function_description">Transition description</label>
-        <textarea id="transition_function_description" name="transition_function_description" rows="2" placeholder="If check passes go to X, else to Y"></textarea>
-      </div>
-      <div class="form-row state-only-fields">
-        <label for="next_state_ids">Next state IDs (space or comma separated)</label>
-        <input type="text" id="next_state_ids" name="next_state_ids" placeholder="e.g. next_state END_INVALID">
-      </div>
-      <button type="submit" class="btn btn-primary">Add state</button>
-    </form>
-  </section>
-  <script>
-    (function() {
-      var form = document.getElementById('add-state-form');
-      var roleRadios = form.querySelectorAll('input[name="role"]');
-      var nonEndRows = form.querySelectorAll('.state-only-fields');
-      function toggle() {
-        var isEnd = form.querySelector('input[name="role"]:checked').value === 'end';
-        nonEndRows.forEach(function(row) {
-          row.style.display = isEnd ? 'none' : '';
-        });
-        var checkId = form.querySelector('#check_id');
-        if (checkId) checkId.removeAttribute('required');
-        if (!isEnd) checkId.setAttribute('required', 'required');
-      }
-      roleRadios.forEach(function(r) { r.addEventListener('change', toggle); });
-      toggle();
-    })();
-  </script>
-
-  {% if draft.states %}
-  <section class="current-states">
-    <h2>Current states ({{ draft.states | length }})</h2>
-    <ul class="state-pills">
-      {% for s in draft.states %}
-      <li class="pill {% if s.is_start %}start{% endif %} {% if s.is_end %}end{% endif %}">{{ s.state_id }}</li>
-      {% endfor %}
-    </ul>
-  </section>
-  <section class="finalize-section">
-    <form method="post" onsubmit="return confirm('Save this SOP?');">
-      <input type="hidden" name="action" value="finalize">
-      <button type="submit" class="btn btn-success">Save SOP</button>
-    </form>
-  </section>
-  {% endif %}
-
-  {% endif %}
 </div>
 {% endblock %}

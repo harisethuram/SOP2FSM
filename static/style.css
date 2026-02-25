@@ -506,6 +506,40 @@ body {
   border-radius: 4px;
 }
 
+.pending-state-summary {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--surface2);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.pending-state-summary ul {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.25rem;
+}
+
+.pending-state-summary li {
+  margin-bottom: 0.35rem;
+}
+
+.pending-form-readonly {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--surface2);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.pending-form-readonly .pending-fields {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.25rem;
+}
+
+.pending-form-readonly .pending-fields li {
+  margin-bottom: 0.35rem;
+}
+
 .similar-list {
   list-style: none;
   padding: 0;
@@ -520,6 +554,19 @@ body {
 
 .similar-item input {
   margin-right: 0.5rem;
+}
+
+.similar-item .sim-score {
+  color: var(--text-muted);
+  font-size: 0.9em;
+}
+
+.similar-item .dup-badge {
+  font-size: 0.8em;
+  background: var(--surface2);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  margin-left: 0.25rem;
 }
 
 .confirm-form {
@@ -558,6 +605,34 @@ body {
 .pill.end {
   background: rgba(248, 81, 73, 0.2);
   color: var(--red);
+}
+
+.pill.missing {
+  background: rgba(210, 153, 34, 0.2);
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
+}
+
+.missing-states-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: rgba(210, 153, 34, 0.06);
+  border: 1px solid var(--yellow);
+  border-radius: var(--radius);
+}
+
+.missing-states-section h2 {
+  margin: 0 0 0.35rem 0;
+}
+
+.missing-states-section .sub {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.missing-pills {
+  margin: 0;
 }
 
 .finalize-section .btn {

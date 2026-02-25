@@ -1,0 +1,46 @@
+title: Verify Invoices
+created_at: '2026-02-25T19:15:14Z'
+version: 1
+states:
+- check_id: check_format
+  is_end: false
+  is_start: true
+  next_state_ids:
+  - check_enf
+  - reject
+  state_id: check_invoice_format
+  transition_function_description: fr
+- check_id: check_enf
+  is_end: false
+  is_start: false
+  next_state_ids:
+  - check_quantity
+  - reject
+  state_id: check_enf
+  transition_function_description: check_quantity,reject
+- check_id: check_quantity
+  is_end: false
+  is_start: false
+  next_state_ids:
+  - check_quantity_x
+  - reject
+  state_id: check_quantity
+  transition_function_description: transition to check_quantity_x if pass, else reject
+- check_id: check_quantity
+  is_end: false
+  is_start: false
+  next_state_ids:
+  - accept
+  - reject
+  state_id: check_quantity_x
+  transition_function_description: transition to accept if pass, else reject
+- is_end: true
+  is_start: false
+  next_state_ids: []
+  state_id: accept
+  transition_function_description: ''
+- is_end: true
+  is_start: false
+  next_state_ids: []
+  state_id: reject
+  transition_function_description: ''

@@ -1,0 +1,66 @@
+title: Verify Letter of Authorization
+created_at: '2026-02-25T18:56:28Z'
+version: 1
+states:
+- check_id: check_format
+  is_end: false
+  is_start: true
+  next_state_ids:
+  - check_misspellings
+  - reject
+  state_id: check_format
+  transition_function_description: If check passes, go to check_misspellings, else
+    go to reject.
+- check_id: check_misspellings
+  is_end: false
+  is_start: false
+  next_state_ids:
+  - check_format_diff
+  - reject
+  state_id: check_misspellings
+  transition_function_description: If check passes, go to check_format_diff, else
+    go to reject.
+- check_id: check_format_diff
+  is_end: false
+  is_start: false
+  next_state_ids:
+  - check_name_address
+  - reject
+  state_id: check_format_diff
+  transition_function_description: If check passes, go to check_name_address, else
+    to reject
+- check_id: check_name_address
+  is_end: false
+  is_start: false
+  next_state_ids:
+  - check_grants_rights
+  - reject
+  state_id: check_name_address
+  transition_function_description: If pass, go to check_grants_rights, else to reject
+- check_id: check_grants_rights
+  is_end: false
+  is_start: false
+  next_state_ids:
+  - check_rights_owner
+  - reject
+  state_id: check_grants_rights
+  transition_function_description: If check passes, go to check_rights_owner, else
+    go to reject.
+- check_id: check_rights_owner
+  is_end: false
+  is_start: false
+  next_state_ids:
+  - accept
+  - reject
+  state_id: check_rights_owner
+  transition_function_description: If check passes, go to accept, else go to reject.
+- is_end: true
+  is_start: false
+  next_state_ids: []
+  state_id: accept
+  transition_function_description: ''
+- is_end: true
+  is_start: false
+  next_state_ids: []
+  state_id: reject
+  transition_function_description: ''

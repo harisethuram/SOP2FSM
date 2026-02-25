@@ -7,7 +7,7 @@ _model = None
 _embedding_dim = None
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
-
+# embs
 def _get_model():
     global _model, _embedding_dim
     if _model is None:
@@ -47,7 +47,7 @@ def save_embeddings_tensor(tensor):
     torch.save(tensor, DATA_DIR / "embeddings.pt")
 
 
-def find_similar_check_ids(check_text: str, threshold: float = 0.95):
+def find_similar_check_ids(check_text: str, threshold: float = 0.7):
     """
     Compare embedded check_text to existing embeddings.
     Return list of (check_index, similarity) for similarities >= threshold.
@@ -64,3 +64,17 @@ def find_similar_check_ids(check_text: str, threshold: float = 0.95):
         if float(s) >= threshold:
             result.append((i, float(s)))
     return result
+
+
+def get_cosine_similarities_to_all(check_text: str):
+    """
+    Return cosine similarity (dot product on normalized vectors) of check_text
+    to every existing canonical check. Row order matches check_ids.yaml.
+    Returns list of (check_index, similarity), empty if no existing checks.
+    """
+    new_emb = embed_text(check_text)
+    tensor = load_embeddings_tensor()
+    if tensor.shape[0] == 0:
+        return []
+    sims = tensor.numpy() @ new_emb
+    return [(i, float(s)) for i, s in enumerate(sims)]

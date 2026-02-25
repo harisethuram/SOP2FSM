@@ -1,3 +1,23 @@
-- check_id: none
-  check_text: ''
-  created_at: '2026-02-20T02:26:38Z'
+- check_id: check_format
+  check_text: 'Check the document if is one of the following formats: handwritten,
+    .doc, .xlsx. Reject if it is.'
+  created_at: '2026-02-25T18:51:41Z'
+- check_id: check_misspellings
+  check_text: Check the document for misspellings. If there are any misspellings,
+    reject.
+  created_at: '2026-02-25T18:52:38Z'
+- check_id: check_format_diff
+  check_text: Review format differences between current document and previous documents
+    from same supplier. If there are significant differences, reject.
+  created_at: '2026-02-25T18:54:07Z'
+- check_id: check_name_address
+  check_text: Compare the seller name and address on document to internal information.
+    If not matching, reject.
+  created_at: '2026-02-25T18:54:45Z'
+- check_id: check_grants_rights
+  check_text: Review if the document grants seller rights to distribute products bearing
+    the Intellectual property. If not, reject.
+  created_at: '2026-02-25T18:55:31Z'
+- check_id: check_rights_owner
+  check_text: Is the rights owner information present on the document? If not, reject.
+  created_at: '2026-02-25T18:56:12Z'
