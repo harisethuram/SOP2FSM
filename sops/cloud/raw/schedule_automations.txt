@@ -1,0 +1,51 @@
+To configure an automation as a registered task for a maintenance window
+Open the AWS Systems Manager console at https://console.aws.amazon.com/systems-manager/.
+
+In the left navigation pane, choose Maintenance Windows, and then choose the maintenance window you want to register an Automation task with.
+
+Choose Actions. Then choose Register Automation task to run your choice of an automation on targets by using a runbook.
+
+For Name, enter a name for the task.
+
+For Description, enter a description.
+
+For Document, choose the runbook that defines the tasks to run.
+
+For Document version, choose the runbook version to use.
+
+For Task priority, specify a priority for this task. 1 is the highest priority. Tasks in a maintenance window are scheduled in priority order; tasks that have the same priority are scheduled in parallel.
+
+In the Targets section, if the runbook you chose is one that runs tasks on resources, identify the targets on which you want to run this automation by specifying tags or by selecting instances manually.
+
+Note
+If you want to pass the resources through input parameters instead of targets, you don't need to specify a maintenance window target.
+
+In many cases, you don't need to explicitly specify a target for an automation task. For example, say that you're creating an Automation-type task to update an Amazon Machine Image (AMI) for Linux using the AWS-UpdateLinuxAmi runbook. When the task runs, the AMI is updated with the latest available Linux distribution packages and Amazon software. New instances created from the AMI already have these updates installed. Because the ID of the AMI to be updated is specified in the input parameters for the runbook, there is no need to specify a target again in the maintenance window task.
+
+For information about maintenance window tasks that don't require targets, see Registering maintenance window tasks without targets.
+
+(Optional) For Rate control:
+
+Note
+If the task you're running doesn't specify targets, you don;t need to specify rate controls.
+
+For Concurrency, specify either a number or a percentage of targets on which to run the automation at the same time.
+
+If you selected targets by choosing tag key-value pairs, and you aren't certain how many targets use the selected tags, then limit the number of automations that can run at the same time by specifying a percentage.
+
+When the maintenance window runs, a new automation is initiated per target. There is a limit of 100 concurrent automations per AWS account. If you specify a concurrency rate greater than 100, concurrent automations greater than 100 are automatically added to the automation queue. For information, see Systems Manager service quotas in the Amazon Web Services General Reference.
+
+For Error threshold, specify when to stop running the automation on other targets after it fails on either a number or a percentage of targets. For example, if you specify three errors, then Systems Manager stops running automations when the fourth error is received. Targets still processing the automation might also send errors.
+
+In the Input Parameters section, specify parameters for the runbook. For runbooks, the system auto-populates some of the values. You can keep or replace these values.
+
+Important
+For runbooks, you can optionally specify an Automation Assume Role. If you don't specify a role for this parameter, then the automation assumes the maintenance window service role you choose in step 11. As such, you must ensure that the maintenance window service role you choose has the appropriate AWS Identity and Access Management (IAM) permissions to perform the actions defined within the runbook.
+
+For example, the service-linked role for Systems Manager doesn't have the IAM permission ec2:CreateSnapshot, which is required to use the runbook AWS-CopySnapshot. In this scenario, you must either use a custom maintenance window service role or specify an Automation assume role that has ec2:CreateSnapshot permissions. For information, see Setting up Automation.
+
+In the IAM service role area, choose a role to provide permissions for Systems Manager to start the automation.
+
+To create a service role for maintenance window tasks, see Setting up Maintenance Windows.
+
+Choose Register Automation task.

@@ -21,3 +21,10 @@
 - check_id: check_rights_owner
   check_text: Is the rights owner information present on the document? If not, reject.
   created_at: '2026-02-25T18:56:12Z'
+- check_id: check_item
+  check_text: Is the enforced item present on the document? If not, reject.
+  created_at: '2026-02-25T19:54:26Z'
+- check_id: check_quantity
+  check_text: Is the quantity proclaimed in the invoice at least the quantity sold
+    by the seller? If not, reject.
+  created_at: '2026-02-25T19:55:15Z'
