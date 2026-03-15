@@ -5,11 +5,10 @@ A local web app to create and visualize **Standard Operating Procedures (SOPs)**
 ## Setup
 
 ```bash
-cd c:\DevCode\503_project
 pip install -r requirements.txt
 ```
 
-Requirements: Python 3.8+, Flask, PyYAML, sentence-transformers, torch.
+Requirements: Python 3.10+, Flask, PyYAML, sentence-transformers, torch.
 
 ## Run
 
@@ -17,15 +16,7 @@ Requirements: Python 3.8+, Flask, PyYAML, sentence-transformers, torch.
 python app.py
 ```
 
-By default it runs on port **8000**. Open [http://127.0.0.1:8000](http://127.0.0.1:8000).
-
-To change the port:
-
-```bash
-PORT=5050 python app.py
-```
-
-Log in with any username (password is ignored for the demo).
+Open [http://127.0.0.1:5000](http://127.0.0.1:5000). Log in with any username (password is ignored for the demo).
 
 ## Features
 
@@ -43,12 +34,7 @@ Log in with any username (password is ignored for the demo).
 
 - `data/check_ids.yaml` — Canonical checks (check_id, check_text, created_at).
 - `data/embeddings.pt` — Torch tensor of normalized embeddings for those checks.
-- `data/sops/<sop_id>.yaml` — SOP files (global; user is treated as dummy).
-
-## Tests
-
-```bash
-python -m unittest discover -s tests -p "test_*.py" -v
-```
+- `data/<username>/sops/<sop_id>.yaml` — One SOP file per user/SOP.
 
 See `design.md` for the full specification.
+
