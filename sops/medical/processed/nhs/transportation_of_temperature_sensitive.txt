@@ -15,10 +15,15 @@ Step 3: Inspect the MP before transport.
   - If yes: Go to Step 4.
   - If no (MP appears damaged): Do NOT administer the MP. Return it unused to the Clinical Trials Pharmacy Department, who will advise on next steps. END.
 
-Step 4: Pack the MP for transport.
-  Check: Is the MP in its original packaging and placed in a suitable cool pack/box (NOT a domestic cool box)?
+Step 4: Confirm the MP is in its original packaging.
+  Check: Is the medicinal product still in the manufacturer's original, sealed packaging?
+  - If yes: Go to Step 4a.
+  - If no: Do not remove the MP from its original packaging. If the original packaging is missing or compromised, contact the Clinical Trials Pharmacy Department for guidance before proceeding.
+
+Step 4a: Place the MP in a suitable transport container.
+  Check: Has the MP (in its original packaging) been placed in an appropriate cool pack/box that is NOT a domestic cool box?
   - If yes: Go to Step 5.
-  - If no: Keep the MP in original packaging and place it in a suitable cool pack/box. If transporting by vehicle (e.g. home visit), place the cool pack/box in the boot of the car, not on a car seat.
+  - If no: Place the MP in a suitable cool pack/box. If transporting by vehicle (e.g. home visit), the cool pack/box must be placed in the boot of the car, not on a car seat.
 
 Step 5: Place temperature monitoring device.
   Check: Has a maximum/minimum calibrated temperature probe or Sponsor-approved temperature recording device been placed in the middle of the cool pack/box, with the display panel visible outside?

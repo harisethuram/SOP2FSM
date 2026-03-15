@@ -43,6 +43,11 @@ Step 6a: Receive corrected invoice.
   - If yes: Return to Step 6 to re-review.
   - If no: Follow up with the Utility. Make timely corrections to denied invoices.
 
+Step 6b: Confirm all supporting documentation is attached to the invoice.
+  Check: Has the invoice been verified to include all required supporting documents — such as itemized cost breakdowns, proof of work completed, contractual references, and any certifications — as specified in the Finance Utility Invoice Requirements checklist?
+  - If yes: Go to Step 7.
+  - If no: Return the invoice to the Utility with a list of missing documents.
+
 Step 7: Submit for manager approval.
   Check: Has the Regional Utilities Manager/Team Lead performed a final review and approved the invoice for processing?
   - If yes: Go to Step 8.

@@ -7,8 +7,13 @@ Step 1: Open the Systems Manager console.
 
 Step 2: Select the target maintenance window.
   Check: In the left navigation pane under Maintenance Windows, have you selected the maintenance window you want to register the task with?
-  - If yes: Go to Step 3.
+  - If yes: Go to Step 2a.
   - If no: Choose Maintenance Windows, then select the correct window.
+
+Step 2a: Confirm the maintenance window details are correct.
+  Check: Have you reviewed the maintenance window's schedule, duration, and associated targets to confirm this is the correct window for the automation task?
+  - If yes: Go to Step 3.
+  - If no: Navigate back to the maintenance window list and select the correct one.
 
 Step 3: Initiate task registration.
   Check: Have you chosen Actions > Register Automation task?

@@ -32,8 +32,18 @@ Step 6: Dispose of waste.
 
 Step 7: Store samples.
   Check: Are samples stored according to the study Protocol/Laboratory Manual instructions (correct temperature, correct storage box, correctly labelled in waterproof ink with study name/number/box number/contact details)?
-  - If yes: Go to Step 8.
+  - If yes: Go to Step 7a.
   - If no: Store samples correctly. Use sample grid boxes with lids for serum/plasma; seal other samples in clear plastic marsupial bags. Complete a CRF Freezer Storage Application form if storing in CRF freezer storage. Complete study sample logs as required.
+
+Step 7a: Verify labelling of stored samples.
+  Check: Have all stored sample containers been checked to confirm that labels include the study name, participant identifier, sample type, collection date, and storage conditions, and that all labels are legible and securely attached?
+  - If yes: Go to Step 7b.
+  - If no: Re-label or replace any labels that are missing, illegible, or incomplete before proceeding.
+
+Step 7b: Confirm storage area access controls.
+  Check: Is the sample storage area secured with restricted access limited to authorised study personnel only, and is an access log maintained?
+  - If yes: Go to Step 8.
+  - If no: Ensure the storage area is locked or otherwise access-controlled, and establish an access log if one does not exist.
 
 Step 8: Transport samples locally (if needed).
   Check: Do samples need to be transported within the local site (e.g. from collection point to centrifuge lab or freezer)?

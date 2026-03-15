@@ -2,8 +2,13 @@ SOP: Process for Expediting Urgent Public Health Research
 
 Step 1: Receive notification of urgent public health research.
   Check: Has the NIHR Local Clinical Research Network been informed by DHSC that urgent public health research is needed?
-  - If yes: Go to Step 2.
+  - If yes: Go to Step 1a.
   - If no: No action required under this SOP. END.
+
+Step 1a: Verify staff training and preparedness.
+  Check: Have all R&D staff who may be involved in expedited research delivery confirmed they have completed the necessary training (including GCP and relevant SOPs), and is this documented in their training records?
+  - If yes: Go to Step 2.
+  - If no: Ensure all potentially involved staff complete and document required training before commencing expedited research activities.
 
 Step 2: Obtain permission to expedite.
   Check: Have the NIHR CRN SWP Urgent Public Health Research Delivery Plan (SOP 11), the Trust's Emergency Preparedness Policy, and R&D's Service Continuity Plan been followed to obtain permission to expedite?

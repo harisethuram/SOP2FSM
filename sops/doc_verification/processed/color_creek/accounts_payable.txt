@@ -27,8 +27,13 @@ Step 4a: Resolve discrepancies.
 
 Step 5: Verify invoice amount and payment terms.
   Check: Is the invoice amount accurate and within the agreed-upon payment terms?
-  - If yes: Go to Step 6.
+  - If yes: Go to Step 5a.
   - If no: Contact the vendor to resolve. Return to Step 5 after resolution.
+
+Step 5a: Cross-check invoice line items against delivery records.
+  Check: Have all individual line items on the invoice been verified against the delivery receipt or service completion records to confirm the billed quantities and amounts match what was actually delivered or performed?
+  - If yes: Go to Step 6.
+  - If no: Identify and document any discrepancies. Contact the vendor to resolve before proceeding.
 
 Step 6: Obtain department head approval.
   Check: Has the relevant department head (or authorized personnel) reviewed and approved the invoice?

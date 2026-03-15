@@ -15,8 +15,13 @@ Step 3: Verify vendor invoice standards.
   - York University's name appears on the invoice
   - Invoice is addressed to the correct York University campus address
   - Vendor's HST registration number is displayed (or small supplier exemption is noted)
-  - If yes: Go to Step 4.
+  - If yes: Go to Step 3a.
   - If no: Contact the vendor to obtain a corrected invoice meeting these standards.
+
+Step 3a: Validate that the invoice charges are correct and properly authorized.
+  Check: Have the charges on the invoice been reviewed to confirm they are accurate, correspond to goods or services actually received, and are consistent with the agreed-upon pricing or contract terms?
+  - If yes: Go to Step 4.
+  - If no: Contact the vendor to clarify or dispute the charges before proceeding.
 
 Step 4: Complete the "Pay To" field.
   Check: Has the vendor's name been entered in the "Pay To" field exactly as it appears on the invoice?

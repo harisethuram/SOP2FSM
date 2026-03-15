@@ -44,8 +44,13 @@ Step 8: GOG review and approval.
 
 Step 9: Publish the SOP.
   Check: Has GOG approved the SOP?
-  - If yes: The QA team prepares the SOP for publishing: assign unique reference number (S# / title), set effective date and review date (no more than 3 years), update version history, remove Draft watermark, upload to the Quality Management System and Royal Devon website, file a signed master copy in the SOPs Master File, and destroy copies of superseded versions (retain only the master electronically). Go to Step 10.
+  - If yes: The QA team prepares the SOP for publishing: assign unique reference number (S# / title), set effective date and review date (no more than 3 years), update version history, remove Draft watermark, upload to the Quality Management System and Royal Devon website, file a signed master copy in the SOPs Master File, and destroy copies of superseded versions (retain only the master electronically). Go to Step 9a.
   - If no: Return to Step 7 or Step 8 to address outstanding issues.
+
+Step 9a: Confirm the published SOP is accessible to all relevant personnel.
+  Check: Has the finalised SOP been verified as accessible on the Royal Devon website and the Quality Management System, and have all relevant staff and departments been notified of its availability?
+  - If yes: Go to Step 10.
+  - If no: Verify the upload was successful and send notifications to relevant staff via newsletters, email, or team meetings.
 
 Step 10: Training.
   Check: Have all staff for whom the SOP is relevant completed self-directed training and documented it in their training record?

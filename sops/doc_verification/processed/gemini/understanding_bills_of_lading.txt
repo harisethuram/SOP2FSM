@@ -50,8 +50,13 @@ Step 9: Determine placarding requirements.
 
 Step 10: Verify product information section.
   Check: Does the commodity description section correctly identify all materials with proper UN description, commodity, class, packing group, and container size for hazardous materials (or commodity and container size for non-hazardous)? Is the freight class correctly populated?
-  - If yes: Go to Step 11.
+  - If yes: Go to Step 10a.
   - If no: Correct the descriptions. If a generic name or description appears instead of the proper DOT description, notify the IT department. Look up correct descriptions in 40CFR shipping tables or contact Gemini's regulatory department.
+
+Step 10a: Confirm hazardous material descriptions are fully DOT-compliant.
+  Check: For every item marked as hazardous, does the BOL contain the complete and correct DOT shipping name, UN number, hazard class, packing group, and quantity — in full compliance with 49 CFR requirements?
+  - If yes: Go to Step 11.
+  - If no: Correct any non-compliant entries. Consult the 40CFR shipping tables or Gemini's regulatory department if the correct classification is uncertain.
 
 Step 11: Verify third-party billing (if applicable).
   Check: Are the freight terms "Third Party"?

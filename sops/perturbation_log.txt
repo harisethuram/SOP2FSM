@@ -1,0 +1,166 @@
+Perturbation Log
+================
+16 controlled perturbations across 13 SOPs in 3 domains.
+
+Perturbation Types:
+  W = Within-SOP redundancy (new step semantically duplicates an existing step in the same SOP)
+  C = Cross-SOP redundancy (new step duplicates a check from another SOP in the same org)
+  N = Near-duplicate canonical check (wording is close to a check in another SOP/org, testing embedding similarity)
+  S = Structural variation (an existing combined step is split into finer-grained sub-steps)
+
+==============================================================================
+DOMAIN: cloud | ORG: aws
+==============================================================================
+
+P01 [C] aws/patch_processing — Step 0 (inserted)
+  Check text: "Have you logged into the AWS Management Console and navigated to the Systems Manager Patch Manager dashboard?"
+  Redundant with:
+    - aws/maintenance_window Step 2: "Is the AWS Systems Manager console open at the Maintenance Windows page?"
+    - aws/schedule_automations Step 1: "Is the AWS Systems Manager console open?"
+  Notes: Cross-SOP. Same "open the console" action, different wording and target page.
+
+P02 [W] aws/patch_processing — Step 3a (inserted)
+  Check text: "Have you verified that every instance in the development patch group has successfully installed the patches specified by the patch baseline?"
+  Redundant with:
+    - aws/patch_processing Step 3: "Has the custom automation code configured Patch Manager using the Patch Group and Maintenance Window tags and applied patches to the development environment?"
+  Notes: Within-SOP. Step 3 confirms patches were applied; Step 3a re-confirms individual instances received them.
+
+P03 [N] aws/schedule_automations — Step 2a (inserted)
+  Check text: "Have you reviewed the maintenance window's schedule, duration, and associated targets to confirm this is the correct window for the automation task?"
+  Redundant with:
+    - aws/maintenance_window Step 2: "Is the AWS Systems Manager console open at the Maintenance Windows page?"
+    - aws/schedule_automations Step 2: "...have you selected the maintenance window you want to register the task with?"
+  Notes: Near-duplicate. Adds a "verify you picked the right one" check that overlaps with the existing selection step.
+
+P04 [S] aws/maintenance_window — Step 6 split into Step 6 + Step 6a
+  Original: Single compound step covering command document, priority, targets, rate control, IAM, output, SNS, parameters.
+  After: Step 6 covers core settings (document, priority, targets, rate control). Step 6a covers permissions/output/parameters.
+  Contrast with:
+    - aws/schedule_automations Steps 5-11 which spread the same settings across 7 separate steps.
+  Notes: Structural variation. The same configuration task now has two different granularity levels across two AWS SOPs.
+
+==============================================================================
+DOMAIN: medical | ORG: nhs
+==============================================================================
+
+P05 [W] nhs/sop_creation — Step 9a (inserted)
+  Check text: "Has the finalised SOP been verified as accessible on the Royal Devon website and the Quality Management System, and have all relevant staff and departments been notified of its availability?"
+  Redundant with:
+    - nhs/sop_creation Step 9: "...upload to the Quality Management System and Royal Devon website..."
+  Notes: Within-SOP. Step 9 includes uploading as part of publishing; Step 9a re-checks accessibility and adds a notification check.
+
+P06 [C] nhs/establishing_and_maintaining_tmf_isf — Step 1a (inserted)
+  Check text: "Have all personnel who will be responsible for establishing and maintaining the TMF and ISF completed the required GCP and SOP-specific training, and is this training documented in their staff training records?"
+  Redundant with:
+    - nhs/sop_creation Step 10: "Have all staff...completed self-directed training and documented it in their training record?"
+    - nhs/management_of_research_samples Step 1: "Has the staff member...completed appropriate training, and is documented evidence of this training available?"
+    - nhs/transportation_of_temperature_sensitive Step 1: "Has the staff member...received study-specific training, and is this recorded in the study training log?"
+  Notes: Cross-SOP. The NHS training verification check now appears in 4 of 5 NHS SOPs with distinct wordings.
+
+P07 [C] nhs/establishing_and_maintaining_tmf_isf — Step 10a (inserted)
+  Check text: "Has the QA team reviewed the TMF/ISF to confirm ongoing compliance with R&D governance standards and GCP requirements, with no unresolved deviations?"
+  Redundant with:
+    - nhs/sop_creation Step 11: "Is the SOP within its review date, and are there no deviations or legislative changes requiring an update?"
+    - nhs/sop_creation Step 4: "Has a request been submitted to the Governance Oversight Group (GOG) via the QA team?"
+  Notes: Cross-SOP. QA/governance compliance review pattern shared across SOPs with different wording.
+
+P08 [C] nhs/expediting_urgent_public_health_research — Step 1a (inserted)
+  Check text: "Have all R&D staff who may be involved in expedited research delivery confirmed they have completed the necessary training (including GCP and relevant SOPs), and is this documented in their training records?"
+  Redundant with:
+    - nhs/establishing_and_maintaining_tmf_isf Step 1a (P06 above)
+    - nhs/management_of_research_samples Step 1
+    - nhs/transportation_of_temperature_sensitive Step 1
+    - nhs/sop_creation Step 10
+  Notes: Cross-SOP. Fifth instance of the training verification check across NHS SOPs.
+
+P09 [W] nhs/management_of_research_samples — Step 7a (inserted)
+  Check text: "Have all stored sample containers been checked to confirm that labels include the study name, participant identifier, sample type, collection date, and storage conditions, and that all labels are legible and securely attached?"
+  Redundant with:
+    - nhs/management_of_research_samples Step 5: "Are all sample tubes correctly labelled according to the study Protocol/Laboratory Manual, cross-referenced with the study subject and study-specific documentation...?"
+  Notes: Within-SOP. Step 5 checks labelling at collection time; Step 7a re-checks labelling after storage.
+
+P10 [C] nhs/management_of_research_samples — Step 7b (inserted)
+  Check text: "Is the sample storage area secured with restricted access limited to authorised study personnel only, and is an access log maintained?"
+  Redundant with:
+    - nhs/establishing_and_maintaining_tmf_isf Step 5: "Is the TMF being actively maintained and securely stored (locked cabinet/room or secure server), accessible only by authorised personnel?"
+    - nhs/establishing_and_maintaining_tmf_isf Step 9: "Is the ISF being actively maintained and stored securely...with access limited to authorised personnel?"
+  Notes: Cross-SOP. Same "secure storage with restricted access" pattern, applied to samples vs. documents.
+
+P11 [S] nhs/transportation_of_temperature_sensitive — Step 4 split into Step 4 + Step 4a
+  Original: Single step checking "Is the MP in its original packaging and placed in a suitable cool pack/box?"
+  After: Step 4 checks original packaging only. Step 4a checks cool pack/box placement.
+  Contrast with:
+    - nhs/management_of_research_samples Step 7 which keeps storage requirements combined in a single step.
+  Notes: Structural variation. Similar storage/packaging checks split differently across two NHS SOPs.
+
+==============================================================================
+DOMAIN: doc_verification
+==============================================================================
+
+P12 [W] color_creek/accounts_payable — Step 5a (inserted)
+  Check text: "Have all individual line items on the invoice been verified against the delivery receipt or service completion records to confirm the billed quantities and amounts match what was actually delivered or performed?"
+  Redundant with:
+    - color_creek/accounts_payable Step 3: "Has the invoice been matched with the corresponding purchase order and delivery receipt to confirm goods/services were received as ordered?"
+    - color_creek/accounts_payable Step 4: "Do the quantities and prices on the invoice match those on the purchase order?"
+  Notes: Within-SOP. Steps 3-4 already check PO matching and quantity/price verification; Step 5a re-checks line items against delivery records.
+
+P13 [N] york_u/payment_requisition — Step 3a (inserted)
+  Check text: "Have the charges on the invoice been reviewed to confirm they are accurate, correspond to goods or services actually received, and are consistent with the agreed-upon pricing or contract terms?"
+  Redundant with:
+    - color_creek/accounts_payable Step 5: "Is the invoice amount accurate and within the agreed-upon payment terms?"
+    - color_creek/accounts_payable Step 5a (P12): "Have all individual line items on the invoice been verified against the delivery receipt...?"
+  Notes: Near-duplicate canonical check. Same "verify invoice accuracy" concept across two different orgs (york_u vs color_creek) with different wording.
+
+P14 [W] odyssey/transport_logistics_and_invoicing — Step 10a (inserted)
+  Check text: "Has the driver confirmed that all shipment documents — including the signed POD/CMR, delivery notes, and any customs paperwork — are present, correctly completed, and free of discrepancies before departing the unloading site?"
+  Redundant with:
+    - odyssey/transport_logistics Step 10: "Has the driver obtained a duly signed POD/CMR from the consignee...before leaving the unloading site?"
+    - odyssey/transport_logistics Step 12: "Has the signed POD/CMR been emailed to swiftsolutions@odysseylogistics.com?"
+  Notes: Within-SOP. Step 10 checks POD is signed; Step 10a re-checks all documents are complete (including the POD).
+
+P15 [N] tenessee_dot/utilities_invoice_sop — Step 6b (inserted)
+  Check text: "Has the invoice been verified to include all required supporting documents — such as itemized cost breakdowns, proof of work completed, contractual references, and any certifications — as specified in the Finance Utility Invoice Requirements checklist?"
+  Redundant with:
+    - tenessee_dot/utilities_invoice_sop Step 6: "Does the submitted invoice meet all requirements on the current Finance Utilities Relocation Invoice Requirements checklist...?"
+    - color_creek/accounts_payable Step 3: "Has the invoice been matched with the corresponding purchase order and delivery receipt...?"
+    - york_u/payment_requisition Step 3a (P13): "Have the charges on the invoice been reviewed to confirm they are accurate...?"
+  Notes: Near-duplicate. Also within-SOP redundancy with Step 6. Tests both within-SOP and cross-org canonical check dedup.
+
+P16 [W] gemini/understanding_bills_of_lading — Step 10a (inserted)
+  Check text: "For every item marked as hazardous, does the BOL contain the complete and correct DOT shipping name, UN number, hazard class, packing group, and quantity — in full compliance with 49 CFR requirements?"
+  Redundant with:
+    - gemini/understanding_bills_of_lading Step 10: "Does the commodity description section correctly identify all materials with proper UN description, commodity, class, packing group, and container size for hazardous materials...?"
+  Notes: Within-SOP. Step 10 and Step 10a both check DOT compliance of hazmat descriptions using very similar but not identical wording.
+
+==============================================================================
+SUMMARY
+==============================================================================
+
+By type:
+  Within-SOP redundancy (W):     6 perturbations  (P02, P05, P09, P12, P14, P16)
+  Cross-SOP redundancy (C):      5 perturbations  (P01, P06, P07, P08, P10)
+  Near-duplicate canonical (N):   3 perturbations  (P03, P13, P15)
+  Structural variation (S):       2 perturbations  (P04, P11)
+  Total:                         16 perturbations
+
+By domain:
+  cloud/aws:           4 perturbations across 3 SOPs  (P01-P04)
+  medical/nhs:         7 perturbations across 5 SOPs  (P05-P11)
+  doc_verification:    5 perturbations across 5 SOPs  (P12-P16)
+  Total:              16 perturbations across 13 SOPs
+
+New step count:
+  Before perturbations: 146 steps across 13 SOPs
+  Inserted steps:       14  (P04 and P11 are splits, not net new steps)
+  After perturbations:  160 steps across 13 SOPs
+
+Existing (pre-perturbation) natural redundancy/inconsistency:
+  Within-SOP redundancy:       11 instances
+  Cross-SOP inconsistency:      7 instances (4 AWS + 3 NHS)
+
+Post-perturbation totals:
+  Within-SOP redundancy:       17 instances  (11 natural + 6 perturbations)
+  Cross-SOP inconsistency:     12 instances  (7 natural + 5 perturbations)
+  Near-duplicate canonical:     3 instances  (perturbation-only, cross-org)
+  Structural variation:         2 instances  (1 natural + 2 perturbations = 3 total,
+                                              but P04 modifies the existing natural one)

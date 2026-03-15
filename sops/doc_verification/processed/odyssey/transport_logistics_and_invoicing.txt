@@ -48,8 +48,13 @@ Step 9: Customs procedures (if applicable).
 
 Step 10: Unload and obtain POD.
   Check: Has the driver obtained a duly signed POD/CMR from the consignee (with date, full name, and signature) before leaving the unloading site?
-  - If yes: Go to Step 11.
+  - If yes: Go to Step 10a.
   - If no: The driver must NOT leave until the POD/CMR is signed. Obtain the signed document.
+
+Step 10a: Verify all delivery documentation is complete.
+  Check: Has the driver confirmed that all shipment documents — including the signed POD/CMR, delivery notes, and any customs paperwork — are present, correctly completed, and free of discrepancies before departing the unloading site?
+  - If yes: Go to Step 11.
+  - If no: Resolve any missing or incomplete documents at the unloading site before departure.
 
 Step 11: Send delivery confirmation.
   Check: Has the LSP sent a delivery confirmation email to Odyssey immediately after unloading?

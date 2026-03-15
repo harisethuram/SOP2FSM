@@ -1,5 +1,10 @@
 SOP: Patch Processing for Cloud Servers
 
+Step 0: Access the AWS Systems Manager console.
+  Check: Have you logged into the AWS Management Console and navigated to the Systems Manager Patch Manager dashboard?
+  - If yes: Go to Step 1.
+  - If no: Open the AWS Management Console and go to Systems Manager > Patch Manager.
+
 Step 1: Plan maintenance windows and configure tags.
   Check: Has each application team defined Patch Group tags (grouping servers by environment + OS) and Maintenance Window tags (cron schedule for patching)?
   - If yes: Go to Step 2.
@@ -12,8 +17,13 @@ Step 2: Patch baselines are published.
 
 Step 3: Apply patches to the development environment.
   Check: Has the custom automation code configured Patch Manager using the Patch Group and Maintenance Window tags and applied patches to the development environment?
-  - If yes: Go to Step 4.
+  - If yes: Go to Step 3a.
   - If no: Run the automation (automate-patch Lambda) to set up patching and apply patches to development.
+
+Step 3a: Confirm all targeted development instances received patches.
+  Check: Have you verified that every instance in the development patch group has successfully installed the patches specified by the patch baseline?
+  - If yes: Go to Step 4.
+  - If no: Investigate any instances that failed to install patches. Re-run the patching operation for those instances.
 
 Step 4: Verify the development environment.
   Check: Have the application development and support teams tested and verified that the application works correctly in the development environment after patching?

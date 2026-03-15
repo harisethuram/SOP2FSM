@@ -25,18 +25,23 @@ Step 5: Register the Run Command task.
   - If yes: Go to Step 6.
   - If no: Choose Actions > Register Run command task.
 
-Step 6: Configure the Run Command task.
-  Check: Have you completed all required task settings?
+Step 6: Configure the Run Command task — core settings.
+  Check: Have you set the following core task settings?
   - Command document: AWS-RunPatchBaseline
   - Task priority: set (0 = highest)
   - Targets: the maintenance window target registered in Step 4
   - Rate control: Concurrency and Error threshold values set
+  - If yes: Go to Step 6a.
+  - If no: Fill in the missing fields.
+
+Step 6a: Configure the Run Command task — permissions, output, and parameters.
+  Check: Have you completed the remaining task settings?
   - IAM service role: selected (or let Systems Manager use the service-linked role)
   - Output options: optionally enable S3 output and/or CloudWatch Logs
   - SNS notifications: optionally enable
   - Parameters: Operation set to Scan or Install; RebootOption set as needed
   - If yes: Go to Step 7.
-  - If no: Fill in the missing fields. If using S3 output, verify that the instance profile has write permissions to the bucket. Then go to Step 7.
+  - If no: Fill in the missing fields. If using S3 output, verify that the instance profile has write permissions to the bucket.
 
 Step 7: Register the task.
   Check: Have you clicked Register Run command task?
