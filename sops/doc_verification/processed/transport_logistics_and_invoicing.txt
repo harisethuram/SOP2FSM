@@ -1,0 +1,89 @@
+SOP: Transport Logistics Activities and Invoicing (Odyssey Logistics)
+
+Step 1: Receive and review the transport order.
+  Check: Has the LSP (Logistics Service Provider) received the Transport Order by email (PDF) along with shipping point details and requirements (Annex 3)?
+  - If yes: Go to Step 2.
+  - If no: Wait for the Transport Order from Odyssey Swift Solutions.
+
+Step 2: Check instructions and local legislation compliance.
+  Check: Has the LSP reviewed the order for additional instructions (timeslot booking, opening hours, temperature ranges, tail lift, additional equipment) and confirmed compliance with local legislation at the shipping point?
+  - If yes: Go to Step 3.
+  - If no: Review all additional instructions. If no written objections are made upfront, compliance with local legislation is assumed. Any costs from non-compliance will not be accepted by Odyssey.
+
+Step 3: Ensure driver PPE and readiness.
+  Check: Is the driver wearing the correct PPE as per Annex 6 before entering the shipping site?
+  - If yes: Go to Step 4.
+  - If no: Ensure the driver is wearing correct PPE before entering the site.
+
+Step 4: Provide pre-loading status update.
+  Check: Has the LSP sent readiness-for-loading information to Odyssey one day before the scheduled loading date (or same day if loading is after 12:30 PM), including the planned loading time and all required details?
+  - If yes: Go to Step 5.
+  - If no: Send the loading readiness information. For expedite shipments, also send a status update 1 hour before loading time.
+
+Step 5: Load the goods.
+  Check: Are the goods ready for loading at the shipping site?
+  - If yes: Load the goods. Ensure all documents received upon collection accompany the delivery. Send a loading confirmation email to Odyssey immediately after loading. Go to Step 6.
+  - If no (goods not ready or loading temporarily impossible): Immediately inform Odyssey Swift Solutions. The driver must remain at the loading site until further instructions are received from Odyssey.
+
+Step 6: Determine if this is an expedite shipment.
+  Check: Is this shipment classified as an expedite shipment?
+  - If yes: Follow the enhanced tracking protocol: confirmation upon arrival at loading site, one update per day for multi-day transit (preferably around noon), update 1 hour before scheduled delivery, confirmation upon arrival at final unloading address. Respond to Odyssey status inquiries within 30 minutes. Go to Step 7.
+  - If no: Go to Step 7.
+
+Step 7: Provide estimated unloading time.
+  Check: Has the LSP communicated the estimated unloading time to Odyssey no later than one day before scheduled unloading (or same day if unloading is after 12:30 PM)?
+  - If yes: Go to Step 8.
+  - If no: Send the estimated unloading time. If changes occur, inform Odyssey immediately.
+
+Step 8: Deliver the shipment.
+  Check: Will the delivery arrive by the scheduled delivery date?
+  - If yes: Proceed to the unloading address. Go to Step 9.
+  - If delivery will be late (due to unforeseen events — strikes, extreme weather, technical breakdowns): Contact Odyssey immediately with details and a new ETA. Provide evidence (photos of damaged components with license plate, service documents, traffic map screenshots, police reports, or CMR notes signed by warehouse staff). Go to Step 9 once delivery proceeds.
+  - If delivery will be early: Contact Odyssey so they can confirm with the customer whether early delivery is acceptable. Go to Step 9.
+
+Step 9: Customs procedures (if applicable).
+  Check: Does the shipment cross borders outside the EU?
+  - If yes: Follow the customs instructions specified by Odyssey in the original quote request and order booking. Go to Step 10.
+  - If no: Go to Step 10.
+
+Step 10: Unload and obtain POD.
+  Check: Has the driver obtained a duly signed POD/CMR from the consignee (with date, full name, and signature) before leaving the unloading site?
+  - If yes: Go to Step 11.
+  - If no: The driver must NOT leave until the POD/CMR is signed. Obtain the signed document.
+
+Step 11: Send delivery confirmation.
+  Check: Has the LSP sent a delivery confirmation email to Odyssey immediately after unloading?
+  - If yes: Go to Step 12.
+  - If no: Send the confirmation immediately. For expedite shipments, this must be done upon arrival.
+
+Step 12: Submit the POD/CMR.
+  Check: Has the signed POD/CMR been emailed to swiftsolutions@odysseylogistics.com? (Must be available within 24 hours of delivery if requested.)
+  - If yes: Go to Step 13.
+  - If no: Email the signed POD/CMR. The invoice will NOT be processed until the POD is received.
+
+Step 13: Prepare and send the invoice.
+  Check: Has the invoice been prepared and emailed (PDF, named SCAC + invoice number) to swiftsolutionsPayments@odysseylogistics.com, after the delivery has occurred and within 14 days of delivery? Invoice must include:
+  - Invoice date and payment terms (standard: 60 days)
+  - Delivery description with actual and billed weight and UOM
+  - Order number and ship date
+  - Supplier AR contact information (name, email, telephone)
+  - Remit-to address or email
+  - IBAN and account information
+  - Any additional charges listed separately with charge codes (Annex 7), pre-approved in writing by Odyssey
+  - If yes: Go to Step 14.
+  - If no: Prepare the invoice per the requirements. Do NOT send before delivery. Do NOT include unapproved additional charges.
+
+Step 14: Handle any invoice errors.
+  Check: Has Odyssey identified an error in the invoice?
+  - If yes: Issue a credit note matching the original invoice amount, then re-issue a corrected invoice. Send hard copies of both invoices (wrong and correct) and the credit note to Odyssey. No partial credit notes are accepted. The credit note and corrected invoice cannot be processed on the same day. Return to Step 13.
+  - If no: Go to Step 15.
+
+Step 15: Handle non-conformances (if any).
+  Check: Did any non-conformance occur during this shipment (damage, accident, incident, near-miss, failure to comply with SOP requirements)?
+  - If yes: Odyssey will send a formal non-conformance email notification. The LSP must provide a root cause analysis, gap analysis, and corrective action plan with target dates to Quality@odysseylogistics.com within 5 working days. If the non-conformance has monetary impact (damages, loss), the claims process is activated — LSP must confirm acceptance of liability within 20 working days. Go to Step 16.
+  - If no: Go to Step 16.
+
+Step 16: Emergency handling (if applicable).
+  Check: Did a chemical spill, leak, fire, exposure, or accident occur during transit?
+  - If yes: Immediately call the 24/7 Emergency telephone number printed on the CMR/delivery note and/or product labels. After calling the emergency number, immediately advise Odyssey Swift Solutions of the occurrence. Report all incidents, near-misses, and unusual circumstances per Annex 5 Damage Policy. END.
+  - If no: END (shipment complete).

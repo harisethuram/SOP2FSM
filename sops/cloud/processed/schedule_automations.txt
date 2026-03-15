@@ -1,0 +1,61 @@
+SOP: Register an Automation Task for a Maintenance Window
+
+Step 1: Open the Systems Manager console.
+  Check: Is the AWS Systems Manager console open?
+  - If yes: Go to Step 2.
+  - If no: Navigate to https://console.aws.amazon.com/systems-manager/.
+
+Step 2: Select the target maintenance window.
+  Check: In the left navigation pane under Maintenance Windows, have you selected the maintenance window you want to register the task with?
+  - If yes: Go to Step 3.
+  - If no: Choose Maintenance Windows, then select the correct window.
+
+Step 3: Initiate task registration.
+  Check: Have you chosen Actions > Register Automation task?
+  - If yes: Go to Step 4.
+  - If no: Choose Actions, then choose Register Automation task.
+
+Step 4: Enter task name and description.
+  Check: Have you entered a Name and Description for the task?
+  - If yes: Go to Step 5.
+  - If no: Fill in the Name and Description fields.
+
+Step 5: Select the runbook.
+  Check: Have you selected the Document (runbook) that defines the tasks to run, and chosen the correct Document version?
+  - If yes: Go to Step 6.
+  - If no: Choose the appropriate runbook and version.
+
+Step 6: Set task priority.
+  Check: Have you specified a Task priority (1 = highest; same-priority tasks run in parallel)?
+  - If yes: Go to Step 7.
+  - If no: Set the priority value.
+
+Step 7: Identify targets.
+  Check: Does the selected runbook run tasks on resources?
+  - If yes: Specify targets by tags or by selecting instances manually. Then go to Step 8.
+  - If no (e.g. AMI update where the target is specified in input parameters): Skip target specification. Go to Step 8.
+
+Step 8: Configure rate control (optional).
+  Check: Does the task specify targets?
+  - If yes: Set Concurrency (number or percentage of targets to run simultaneously) and Error threshold (when to stop after failures). Go to Step 9.
+  - If no: Skip rate control. Go to Step 9.
+
+Step 9: Configure input parameters.
+  Check: Have you reviewed and filled in the Input Parameters section? (Some values auto-populate.)
+  - If yes: Go to Step 10.
+  - If no: Specify or confirm the parameters for the runbook.
+
+Step 10: Set the Automation Assume Role (optional).
+  Check: Is an Automation Assume Role specified in the input parameters?
+  - If yes: Go to Step 11.
+  - If no: The automation will use the maintenance window service role. Verify that this role has the required IAM permissions for the runbook actions (e.g. ec2:CreateSnapshot for AWS-CopySnapshot). Go to Step 11.
+
+Step 11: Choose the IAM service role.
+  Check: Have you selected a role in the IAM service role area to provide permissions for Systems Manager?
+  - If yes: Go to Step 12.
+  - If no: Select or create a maintenance window service role.
+
+Step 12: Register the task.
+  Check: Have you clicked Register Automation task?
+  - If yes: END (automation task is registered with the maintenance window).
+  - If no: Click Register Automation task.

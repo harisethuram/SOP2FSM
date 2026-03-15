@@ -1,0 +1,91 @@
+SOP: Payment Requisition Processing
+
+Step 1: Determine if a Payment Requisition is needed.
+  Check: Is payment being requested for an external vendor, and is the purchase NOT made through a Purchase Order, PCard, or Electronic Vendor Invoicing (EVI)?
+  - If yes: Go to Step 2.
+  - If no (payment is via PO, PCard, or EVI): A Payment Requisition is not required. END.
+
+Step 2: Obtain the vendor's original invoice.
+  Check: Has the vendor's original invoice been received (not a duplicate or copy)?
+  - If yes: Go to Step 3.
+  - If no: Request the original invoice from the vendor. Duplicates or copies will not be accepted by Accounts Payable.
+
+Step 3: Verify vendor invoice standards.
+  Check: Does the vendor invoice meet all of the following requirements?
+  - York University's name appears on the invoice
+  - Invoice is addressed to the correct York University campus address
+  - Vendor's HST registration number is displayed (or small supplier exemption is noted)
+  - If yes: Go to Step 4.
+  - If no: Contact the vendor to obtain a corrected invoice meeting these standards.
+
+Step 4: Complete the "Pay To" field.
+  Check: Has the vendor's name been entered in the "Pay To" field exactly as it appears on the invoice?
+  - If yes: Go to Step 5.
+  - If no: Enter the vendor name exactly as shown on the invoice.
+
+Step 5: Complete the "Vendor Address" field.
+  Check: Has the vendor's mailing address (where payment should be sent) been entered exactly as it appears on the invoice?
+  - If yes: Go to Step 6.
+  - If no: Enter the address exactly as on the invoice. Do NOT enter the preparer's or approver's internal address.
+
+Step 6: Complete the "Reason for Payment" field.
+  Check: Has a detailed description of the goods/services purchased been entered, including references to supporting documentation (e.g. invoice number)? If goods/services are for resale, has the third party been identified?
+  - If yes: Go to Step 7.
+  - If no: Provide a detailed description with as many details as possible.
+
+Step 7: Specify the currency.
+  Check: Has the correct currency (Canadian or U.S. funds) been indicated, matching the denomination on the vendor's invoice?
+  - If yes: Go to Step 8.
+  - If no: Enter the correct currency.
+
+Step 8: Complete the chartfield distribution.
+  Check: Has the "Chartfield(s) To Be Charged" section been completed to codify how charges should appear in the general ledger? If multiple pages are needed, is each page marked "Page # of #"?
+  - If yes: Go to Step 9.
+  - If no: Complete the chartfield distribution. Attach additional forms if needed.
+
+Step 9: Complete the Procurement Check Box section.
+  Check: Has the appropriate reason been selected for why this payment is not on a Purchase Order?
+  Valid reasons:
+  - Standing Agreement/Contract (provide reference number)
+  - Total payments to vendor in fiscal year will be < $10,000
+  - Payment for goods/services for resale
+  - Payment to a Regulatory Agency
+  - Refund (course, parking, etc.)
+  - Off campus event venue
+  - Catering
+  - Other (attach additional documentation explaining circumstances)
+  - If yes: Go to Step 10.
+  - If no: Select the correct reason. If "Other," provide supporting documentation. This section is mandatory — incomplete forms will be returned.
+
+Step 10: Preparer signs the form.
+  Check: Has the individual who prepared the Payment Requisition printed their name and signed the "Prepared by" field?
+  - If yes: Go to Step 11.
+  - If no: The preparer must print their name and sign.
+
+Step 11: Approver signs the form.
+  Check: Has the signing authority on all cost centres being charged read the certification and signed the "Approved by" field? Is the approver a different person from the preparer?
+  - If yes: Go to Step 12.
+  - If no: The approver must sign. The preparer and approver must be separate individuals. If charges are shared across departments, all authorized signatures must be obtained.
+
+Step 12: Approver verification.
+  Check: Has the approver confirmed all of the following?
+  - Goods/services have been received
+  - Vendor charges are appropriate
+  - Invoice meets York's standards
+  - Form is complete and diligent
+  - Approver has signing authority on all charged cost centres
+  - Expenditures are valid and comply with University policies (Procurement and Conflict of Interest)
+  - Charged cost centres have sufficient funds
+  - If "< $10,000" was selected: cumulative purchases from this vendor will not exceed $10,000 (excl. taxes) in the fiscal year
+  - If yes: Go to Step 13.
+  - If no: Resolve any issues before proceeding. If cumulative payments are expected to exceed $10,000, contact Procurement Services.
+
+Step 13: Submit to Accounts Payable.
+  Check: Has the completed Payment Requisition (with original invoice attached) been sent to Accounts Payable at 4747 Keele, Finance Department?
+  - If yes: Go to Step 14.
+  - If no: Send the completed form with the original invoice attached.
+
+Step 14: Accounts Payable processes the form.
+  Check: Is the Payment Requisition complete (all fields filled, original invoice attached, all signatures obtained, procurement section completed)?
+  - If yes: Accounts Payable processes the payment. END.
+  - If no: The form will be returned to the preparer for correction. Return to the step corresponding to the missing information.

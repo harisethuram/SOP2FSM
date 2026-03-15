@@ -47,7 +47,7 @@ def save_embeddings_tensor(tensor):
     torch.save(tensor, DATA_DIR / "embeddings.pt")
 
 
-def find_similar_check_ids(check_text: str, threshold: float = 0.7):
+def find_similar_check_ids(check_text: str, threshold: float = 0.8):
     """
     Compare embedded check_text to existing embeddings.
     Return list of (check_index, similarity) for similarities >= threshold.

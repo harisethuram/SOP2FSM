@@ -1,0 +1,56 @@
+SOP: Establishing and Maintaining Trial Master Files (TMF) and Investigator Site Files (ISF)
+
+Step 1: Determine if the study requires a TMF.
+  Check: Is this a regulated clinical trial or a clinical research project under the Trust's sponsorship that must meet the UK Policy Framework for Health and Social Care Research?
+  - If yes: Go to Step 2.
+  - If no: No TMF is required under this SOP. END.
+
+Step 2: Establish the TMF.
+  Check: Has a TMF been created using the R&D-provided template as soon as an outline protocol became available?
+  - If yes: Go to Step 3.
+  - If no: The CI (or delegated personnel) must create the TMF using the R&D template (available on the Royal Devon website). If an alternative template is desired, it must be discussed and agreed with the Sponsor before use. Go to Step 3 once created.
+
+Step 3: Configure the TMF structure and index.
+  Check: Has the CI (or delegate) identified and recorded the location(s) of all documentation forming the TMF, using the TMF Index (templates TMP13/TMP51/TMP75/TMP76)?
+  - If yes: Go to Step 4.
+  - If no: Complete the index. The TMF may be paper, electronic, or hybrid; ensure there is a suitable overall index or table of contents to trace essential documents. If multiple files exist, label spines or name electronic files clearly. Go to Step 4.
+
+Step 4: Decide on electronic vs. paper TMF.
+  Check: Is an electronic TMF (eTMF) being considered?
+  - If yes: Consult the QA team during planning. Verify the eTMF includes: user accounts, secure passwords, regular backup, document locking, periodic retrieval testing, audit trail, role-based permissions, and standardised labelling. Certified copies must replace originals where applicable. Go to Step 5.
+  - If no (paper or hybrid): Go to Step 5.
+
+Step 5: Maintain and store the TMF.
+  Check: Is the TMF being actively maintained and securely stored (locked cabinet/room or secure server), accessible only by authorised personnel?
+  - If yes: Go to Step 6.
+  - If no: Ensure the TMF is stored securely, remains easily accessible to the CI, and is updated with all new and superseded document versions. The TMF must not go off site without Sponsor approval. Go to Step 6.
+
+Step 6: Track essential documents held outside the TMF.
+  Check: Are any essential documents (e.g. IB, PIS, Consent Forms) held in locations separate from the TMF (e.g. on a ward or electronic system like EDGE)?
+  - If yes: The CI or delegate must track where these documents are held. When amendments are issued, remove the previous version and replace with the updated version at all locations. Record locations on the Source Document Tracking Log (TMF Section 11) and/or via file notes. Go to Step 7.
+  - If no: Go to Step 7.
+
+Step 7: Determine if an ISF is needed.
+  Check: Is this a multi-centre research study?
+  - If yes: Go to Step 8.
+  - If no (single-centre study): The CI may hold site-specific documents collectively in the TMF; a separate ISF is not required. Go to Step 10.
+
+Step 8: Establish the ISF.
+  Check: Has the CI established an ISF for each participating site, using the R&D ISF template?
+  - If yes: Go to Step 9.
+  - If no: The CI must provide the ISF template to each PI. Each PI compiles and maintains their own ISF, containing at minimum the same sections as the TMF. If alternative templates are used, they must be agreed with the Sponsor. Go to Step 9.
+
+Step 9: Maintain and store the ISF.
+  Check: Is the ISF being actively maintained and stored securely (locked cabinet/room or secure server), with access limited to authorised personnel?
+  - If yes: Go to Step 10.
+  - If no: Ensure secure storage and active maintenance. Note that ISF documentation containing personal data (e.g. screening docs, participant ID code lists, signed consent forms) must remain under the sole control of the PI/participating site. Go to Step 10.
+
+Step 10: Maintain the R&D (Sponsor) File.
+  Check: Is the R&D Office maintaining a separate file with copies of essential approval documents for Trust Capacity & Capability governance?
+  - If yes: Go to Step 11.
+  - If no: The R&D Office must establish and maintain this file. Where the Trust is Sponsor, additional documents may be held to ensure compliance with Sponsor requirements. Go to Step 11.
+
+Step 11: Close the study and archive.
+  Check: Has the trial been formally closed and the final study report produced?
+  - If yes: Archive the TMF, R&D Sponsor File, and all essential trial documentation as per SOP S03 and WI03. Archive responsibility for the ISF should have been documented during study set-up. END.
+  - If no: Continue maintaining all files until the study is formally closed. Return to Step 5.

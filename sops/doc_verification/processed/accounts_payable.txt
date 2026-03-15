@@ -1,0 +1,76 @@
+SOP: Accounts Payable — Invoice Processing and Payment
+
+Step 1: Receive the invoice.
+  Check: Has an invoice been received (via mail, email, or electronic invoicing system) and directed to the accounts payable department?
+  - If yes: Go to Step 2.
+  - If no: Ensure all invoices are routed to accounts payable immediately upon receipt.
+
+Step 2: Log the invoice.
+  Check: Has the invoice been logged into the accounting system with a unique reference number, including: invoice date, vendor name, invoice amount, due date, and related purchase order number (if applicable)?
+  - If yes: Go to Step 3.
+  - If no: Log the invoice. If no purchase order is associated, note the department or project it pertains to.
+
+Step 3: Match the invoice with the purchase order.
+  Check: Has the invoice been matched with the corresponding purchase order and delivery receipt to confirm goods/services were received as ordered?
+  - If yes: Go to Step 4.
+  - If no (no matching PO exists or goods not received): Investigate. Confirm receipt of goods/services before proceeding.
+
+Step 4: Verify quantities and pricing.
+  Check: Do the quantities and prices on the invoice match those on the purchase order?
+  - If yes: Go to Step 5.
+  - If no: Go to Step 4a.
+
+Step 4a: Resolve discrepancies.
+  Check: Are there discrepancies or unauthorized charges on the invoice?
+  - If yes: Contact the vendor immediately to resolve the issue. Do NOT process the payment until resolved. Return to Step 4 after resolution.
+  - If no: Go to Step 5.
+
+Step 5: Verify invoice amount and payment terms.
+  Check: Is the invoice amount accurate and within the agreed-upon payment terms?
+  - If yes: Go to Step 6.
+  - If no: Contact the vendor to resolve. Return to Step 5 after resolution.
+
+Step 6: Obtain department head approval.
+  Check: Has the relevant department head (or authorized personnel) reviewed and approved the invoice?
+  - If yes: Go to Step 7.
+  - If no: Send the invoice to the department head for approval. Ensure all necessary documentation is provided.
+
+Step 7: Obtain finance manager approval.
+  Check: Has the finance manager (or designated approver) conducted a final review and approved the invoice for payment?
+  - If yes: Go to Step 8. Document the approval and retain for audit purposes.
+  - If no: Submit for final review. If issues are found, return to the appropriate earlier step.
+
+Step 8: Schedule the payment.
+  Check: Has the payment been scheduled based on the invoice due date and cash flow management practices?
+  - If yes: Go to Step 9.
+  - If no: Schedule the payment. Prioritize invoices with early payment discounts. Group payments by due date and vendor.
+
+Step 9: Process the payment.
+  Check: Has the payment been issued via the correct method (EFT, check, or credit card per vendor preference and company policy), with accurate details (vendor bank account, payment amount, payment reference)?
+  - If yes: Go to Step 10.
+  - If no: Process the payment with the correct method and details.
+
+Step 10: Record the payment.
+  Check: Has the transaction been recorded in the accounting system, marking the invoice as paid, with: payment date, method of payment, payment reference number, and the account from which payment was made?
+  - If yes: Go to Step 11.
+  - If no: Record all payment details in the system.
+
+Step 11: Reconcile with bank statement.
+  Check: Has the payment been reconciled with the bank statement to ensure accuracy?
+  - If yes: Go to Step 12.
+  - If no: Reconcile the payment.
+
+Step 12: File documentation.
+  Check: Has the paid invoice been filed along with payment confirmation and related documents (both physical and electronic copies), retained for a minimum of seven years or as required by law?
+  - If yes: Go to Step 13.
+  - If no: File all documents appropriately.
+
+Step 13: Month-end reconciliation.
+  Check: Is it the end of the month?
+  - If yes: Reconcile all accounts payable records with the general ledger. Investigate discrepancies or outstanding payments. Prepare and submit a monthly accounts payable report to the finance manager (total expenses, payments made, outstanding liabilities, early payment discounts or late penalties). Go to Step 14.
+  - If no: Return to Step 1 for the next invoice.
+
+Step 14: Year-end closing.
+  Check: Is it the end of the fiscal year?
+  - If yes: Ensure all invoices for the year have been processed and recorded. Prepare year-end reports summarizing total expenses and AP activities. Provide all necessary documentation for the annual audit. END (year-end complete).
+  - If no: Return to Step 1 for the next invoice.

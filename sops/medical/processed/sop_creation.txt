@@ -1,0 +1,60 @@
+SOP: Preparation of Standard Operating Procedures in R&D
+
+Step 1: Identify the need for a new SOP.
+  Check: Has a member of staff or researcher identified the need for a new procedural document?
+  - If yes: Go to Step 2.
+  - If no: END (no action required).
+
+Step 2: Verify the topic is not already covered.
+  Check: Have you checked existing R&D SOPs and Trust Guidelines/Policies to confirm the topic is not already addressed?
+  - If yes (topic is not covered): Go to Step 3.
+  - If no (topic is already covered by an existing document): No new SOP is needed. END.
+
+Step 3: Determine the document type.
+  Check: Is a full SOP appropriate, or would a Work Instruction (WI) be more suitable? (A WI provides step-by-step detail to support an associated SOP.)
+  - If SOP: Go to Step 4.
+  - If Work Instruction: Draft a WI linked to the relevant SOP. Go to Step 4.
+
+Step 4: Request approval to create the SOP.
+  Check: Has a request been submitted to the Governance Oversight Group (GOG) via the QA team?
+  - If yes: Go to Step 5.
+  - If no: Submit a request to GOG via the QA team. GOG will identify the appropriate author and define the scope of the SOP and any supporting documents (WIs, templates).
+
+Step 5: Determine if this is a study-specific SOP.
+  Check: Is this SOP study-specific (relating to procedures for an individual research project not covered by existing R&D SOPs)?
+  - If yes (Trust-sponsored study): The CI writes or delegates the SOP. If it relates to Pharmacy, Laboratory, or Radiology, consult the relevant department. The CI approves. Go to Step 8.
+  - If yes (hosted or externally-sponsored study): The PI writes or delegates the SOP. The PI approves. The SOP is maintained by the Trial Team outside the R&D SOP library. END.
+  - If no (standard R&D SOP): Go to Step 6.
+
+Step 6: Draft the SOP.
+  Check: Has the author received the current R&D SOP template from the QA team and been assigned an SOP number?
+  - If yes: Go to Step 7.
+  - If no: The QA team provides the template and assigns the SOP number. The author drafts the SOP following the required sections (Key Points, Introduction, Purpose, Scope, Definitions, Duties, Procedures, Dissemination, Monitoring, Archiving, References). Mark the document as "Draft" (watermark and footer). Draft any associated WIs, forms, and templates.
+
+Step 7: Internal review.
+  Check: Has the draft SOP undergone internal review by appropriate staff for readability, conciseness, and accuracy?
+  - If yes (deficiencies addressed): Send the final draft and associated documents to the QA team. Go to Step 8.
+  - If no: Conduct internal review. Address any deficiencies. Then send to the QA team.
+
+Step 8: GOG review and approval.
+  Check: Is this a new SOP or a major update to an existing SOP?
+  - If new SOP: GOG reviews and approves. Go to Step 9.
+  - If existing SOP, minor changes (e.g. references, forms): Document author and GOG review and agree. Go to Step 9.
+  - If existing SOP, major changes (change of practice): Subject to consultation; document author and GOG review and agree. Go to Step 9.
+
+Step 9: Publish the SOP.
+  Check: Has GOG approved the SOP?
+  - If yes: The QA team prepares the SOP for publishing: assign unique reference number (S# / title), set effective date and review date (no more than 3 years), update version history, remove Draft watermark, upload to the Quality Management System and Royal Devon website, file a signed master copy in the SOPs Master File, and destroy copies of superseded versions (retain only the master electronically). Go to Step 10.
+  - If no: Return to Step 7 or Step 8 to address outstanding issues.
+
+Step 10: Training.
+  Check: Have all staff for whom the SOP is relevant completed self-directed training and documented it in their training record?
+  - If yes: Go to Step 11.
+  - If no: Staff must read and understand the SOP, document training in their records, and ensure they can implement the SOP. If clarification is needed, contact R&D for additional training.
+
+Step 11: Ongoing monitoring and compliance.
+  Check: Is the SOP within its review date, and are there no deviations or legislative changes requiring an update?
+  - If yes: Continue using the SOP. Return to this step at the review date.
+  - If deviation occurs: Undertake a risk assessment, identify remedial actions, and submit the risk assessment to GOG. Consider filing a Datix incident report if appropriate.
+  - If review is due or ad hoc review triggered: Return to Step 7 to review the SOP.
+  - If SOP is obsolete: GOG may withdraw the SOP. Communicate the withdrawal to staff. Retain the withdrawn SOP on the Quality Management System. END.

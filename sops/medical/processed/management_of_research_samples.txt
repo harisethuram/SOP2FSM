@@ -1,0 +1,51 @@
+SOP: Management of Research Samples
+
+Step 1: Confirm training and preparation.
+  Check: Has the staff member involved in sample handling completed appropriate training, and is documented evidence of this training available?
+  - If yes: Go to Step 2.
+  - If no: Complete required training and document it before handling any samples.
+
+Step 2: Prepare for sample processing.
+  Check: Is the staff member wearing the required personal protective equipment (PPE) — gloves, apron, and eye protection (safety goggles)?
+  - If yes: Go to Step 3.
+  - If no: Put on all required PPE before processing body fluids. Remove gloves for non-processing tasks (e.g. using the telephone) and remove protective clothing before exiting the sample processing area.
+
+Step 3: Collect and process samples.
+  Check: Are the correct collection containers being used (Sponsor-supplied or as defined in the study Protocol/Laboratory Manual)?
+  - If yes: Go to Step 4.
+  - If no: Obtain the correct containers before collecting samples.
+
+Step 4: Process samples according to study protocol.
+  Check: Have you followed the study-specific sample processing instructions from the Protocol and/or Laboratory Manual (e.g. centrifuge blood into plasma/serum, transfer urine via pipette, store DNA swabs in sterile bags)?
+  - If yes: Go to Step 5.
+  - If no: Follow the study-specific instructions. Go to Step 5 once processing is complete.
+
+Step 5: Label sample tubes.
+  Check: Are all sample tubes correctly labelled according to the study Protocol/Laboratory Manual, cross-referenced with the study subject and study-specific documentation, and was labelling done while still with the participant?
+  - If yes: Go to Step 6.
+  - If no: Label the tubes correctly while still with the participant. Cross-reference details to minimize errors.
+
+Step 6: Dispose of waste.
+  Check: Has all waste material been placed in the correct bin (sharps bin or clinical waste bin) in compliance with the applicable Waste Management Policy (Eastern or Northern Services)?
+  - If yes: Go to Step 7.
+  - If no: Dispose of waste correctly. If a spillage has occurred, refer to the COSHH Policy and Spillage Procedure for the applicable site.
+
+Step 7: Store samples.
+  Check: Are samples stored according to the study Protocol/Laboratory Manual instructions (correct temperature, correct storage box, correctly labelled in waterproof ink with study name/number/box number/contact details)?
+  - If yes: Go to Step 8.
+  - If no: Store samples correctly. Use sample grid boxes with lids for serum/plasma; seal other samples in clear plastic marsupial bags. Complete a CRF Freezer Storage Application form if storing in CRF freezer storage. Complete study sample logs as required.
+
+Step 8: Transport samples locally (if needed).
+  Check: Do samples need to be transported within the local site (e.g. from collection point to centrifuge lab or freezer)?
+  - If yes: Wrap the sample in a clear plastic bag and seal it. Place the bagged sample in a leak-proof plastic container and close the lid (ideally transparent enough to see contents). Go to Step 9.
+  - If no: Go to Step 9.
+
+Step 9: Handle damaged samples during transport.
+  Check: Has any sample tube been damaged during transport?
+  - If yes: Leave the tube inside the sealed plastic bag or container, unopened. Discard the entire package in a clinical waste bin. Record the loss of the sample in study documentation. Return to Step 3 if a replacement sample is needed.
+  - If no: Go to Step 10.
+
+Step 10: Ship samples (if required).
+  Check: Do samples need to be shipped to the Sponsor or an external lab?
+  - If yes: Follow the study-specific shipping instructions in the Protocol and/or Laboratory Manual. END.
+  - If no: END (samples are stored locally as required).

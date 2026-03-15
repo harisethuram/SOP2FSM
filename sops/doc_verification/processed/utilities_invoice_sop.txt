@@ -1,0 +1,75 @@
+SOP: Payment, Tracking and Uploading of Utility Relocation Invoices
+
+Step 1: Schedule and conduct the reimbursement meeting.
+  Check: Has the Utility Relocation Contract been executed?
+  - If yes: Go to Step 2.
+  - If no: Wait until the contract is executed before proceeding.
+
+Step 2: Prepare for the reimbursement meeting.
+  Check: Has the Regional Utilities Manager/Team Lead scheduled a reimbursement meeting (remote or in-person) with the Utility Representatives and their Accounting Representatives?
+  - If yes: Go to Step 3.
+  - If no: Schedule the meeting. Enter complete Utility Coordination information into IRIS.
+
+Step 3: Send the reimbursement packet.
+  Check: Has a Reimbursement Packet been sent to the Utility Representative and their Accounting Representative (via US mail or email) before the meeting? Packet must include at minimum:
+  - Copy of the Utility Relocation Contract section on Reimbursement
+  - Outline of the TDOT Utility Reimbursement process
+  - Copy of current Finance Utility Invoice Requirements checklist
+  - Copy of current Overhead Rate Spreadsheet for Consultants
+  - Copy of Standard and Expanded Utilities Invoice Spreadsheets
+  - Examples of acceptable and unacceptable invoice submissions
+  - Copy of Notice for Periodic Submission of Reimbursement Invoice Letter
+  - Copy of Final Invoice Notice Letter
+  - If yes: Go to Step 4.
+  - If no: Prepare and send the packet.
+
+Step 4: Conduct the reimbursement meeting.
+  Check: Has the meeting been held, including a presentation covering all packet items, and have all necessary contact details for the Utility's Accounts Receivable department been obtained?
+  - If yes: Notify the Utility Division Director. Go to Step 5.
+  - If no: Hold the meeting. Give a presentation (PowerPoint recommended) outlining all reimbursement packet items. Collect all AR contact information.
+
+Step 5: Receive and log the initial invoice.
+  Check: Has the Utility begun submitting invoices for reimbursement?
+  - If yes: Enter the initial submitted invoice information into IRIS. Go to Step 6.
+  - If no: Wait for invoice submission. Send the Utility a Notice to Submit Interim Billing letter by May 1st of the current TDOT fiscal year if invoices have not been received.
+
+Step 6: Review the invoice against the checklist.
+  Check: Does the submitted invoice meet all requirements on the current Finance Utilities Relocation Invoice Requirements checklist (completeness, correct format, all required supporting documentation)?
+  - If yes: Go to Step 7.
+  - If no (invoice is incomplete or non-compliant): Return the invoice to the Utility for corrections. Go to Step 6a.
+
+Step 6a: Receive corrected invoice.
+  Check: Has the Utility submitted a corrected invoice?
+  - If yes: Return to Step 6 to re-review.
+  - If no: Follow up with the Utility. Make timely corrections to denied invoices.
+
+Step 7: Submit for manager approval.
+  Check: Has the Regional Utilities Manager/Team Lead performed a final review and approved the invoice for processing?
+  - If yes: Go to Step 8.
+  - If no: Submit the invoice for the manager's final review. If rejected, return to Step 6a for corrections.
+
+Step 8: Process the invoice in Edison.
+  Check: Has the Receipt and Voucher been correctly created in Edison using the proper business unit, correct Utility address, correct service dates, and with all PII removed from the invoice and supporting documents?
+  - If yes: Go to Step 9.
+  - If no: Complete the Receipt and Voucher in Edison. Refer to the latest applicable manual for BU 41100 receipts and vouchers.
+
+Step 9: Notify Finance and track.
+  Check: Has TDOT Finance been notified to fund the purchase order?
+  - If yes: Go to Step 10.
+  - If no: Notify TDOT Finance.
+
+Step 10: Update IRIS and maintain tracking.
+  Check: Has all invoice information been fully updated in IRIS, paid invoice attachments uploaded, and the project tracking spreadsheet maintained?
+  - If yes: Go to Step 11.
+  - If no: Update IRIS with complete invoice data. Upload paid invoice attachments. Update the tracking spreadsheet. Attend monthly status meetings.
+
+Step 11: Monitor contract compliance.
+  Check: Is the Utility adhering to all executed contract terms regarding reimbursement?
+  Verify:
+  - Adherence to Schedule of Calendar Days
+  - Submission of interim invoices within the TDOT Fiscal Year
+  - Submission of Final Invoice within one year of receiving accepted Certification of Contract Obligation
+  - Retention of supporting documentation for 3 years after final reimbursement
+  - No payment requests for items that fail Buy America or Betterment policies
+  - If yes: Continue processing future invoices (return to Step 5). END when all invoices are processed and the project is complete.
+  - If no (Utility is in breach): Do NOT reimburse. Coordinate with the Utility, Division Manager, and Director to resolve. Escalate issues to the Utility Division Director.

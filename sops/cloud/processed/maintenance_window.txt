@@ -1,0 +1,49 @@
+SOP: Create a Maintenance Window for Patching
+
+Step 1: Verify prerequisites.
+  Check: Have roles and permissions for Maintenance Windows in AWS Systems Manager been configured?
+  - If yes: Go to Step 2.
+  - If no: Complete the setup as described in "Setting up Maintenance Windows" before proceeding.
+
+Step 2: Open the Systems Manager console.
+  Check: Is the AWS Systems Manager console open at the Maintenance Windows page?
+  - If yes: Go to Step 3.
+  - If no: Navigate to https://console.aws.amazon.com/systems-manager/ and choose Maintenance Windows in the left pane.
+
+Step 3: Create the maintenance window.
+  Check: Have you clicked Create maintenance window and filled in the required fields (Name, optional Description, schedule via cron/rate expression, Duration in hours, Stop initiating tasks value)?
+  - If yes: Go to Step 4.
+  - If no: Fill in the fields. Optionally set: Allow unregistered targets, Window start/end dates (ISO-8601), Schedule timezone (IANA format), and tags (e.g. Key=TaskType, Value=Patching). Then click Create maintenance window.
+
+Step 4: Register targets.
+  Check: In the maintenance window details page, have you chosen Actions > Register targets and specified the instance tags to identify the managed nodes?
+  - If yes: Go to Step 5.
+  - If no: Choose the maintenance window you just created. Choose Actions > Register targets. Optionally provide a name, description, and owner. Under Target selection, choose "Specify instance tags", enter the tag key/value, click Add, then click Register target.
+
+Step 5: Register the Run Command task.
+  Check: Have you chosen Actions > Register Run command task in the maintenance window details page?
+  - If yes: Go to Step 6.
+  - If no: Choose Actions > Register Run command task.
+
+Step 6: Configure the Run Command task.
+  Check: Have you completed all required task settings?
+  - Command document: AWS-RunPatchBaseline
+  - Task priority: set (0 = highest)
+  - Targets: the maintenance window target registered in Step 4
+  - Rate control: Concurrency and Error threshold values set
+  - IAM service role: selected (or let Systems Manager use the service-linked role)
+  - Output options: optionally enable S3 output and/or CloudWatch Logs
+  - SNS notifications: optionally enable
+  - Parameters: Operation set to Scan or Install; RebootOption set as needed
+  - If yes: Go to Step 7.
+  - If no: Fill in the missing fields. If using S3 output, verify that the instance profile has write permissions to the bucket. Then go to Step 7.
+
+Step 7: Register the task.
+  Check: Have you clicked Register Run command task?
+  - If yes: Go to Step 8.
+  - If no: Click Register Run command task.
+
+Step 8: Verify compliance after task execution.
+  Check: Has the maintenance window task completed?
+  - If yes: View patch compliance in the Fleet Manager or Patch Manager (Compliance reporting tab) in the Systems Manager console, or use the DescribePatchGroupState / DescribeInstancePatchStatesForPatchGroup APIs. END.
+  - If no: Wait for the maintenance window to execute at the scheduled time.

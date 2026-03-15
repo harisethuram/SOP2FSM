@@ -1,0 +1,31 @@
+SOP: Patch Processing for Cloud Servers
+
+Step 1: Plan maintenance windows and configure tags.
+  Check: Has each application team defined Patch Group tags (grouping servers by environment + OS) and Maintenance Window tags (cron schedule for patching)?
+  - If yes: Go to Step 2.
+  - If no: Application team must create patch groups (e.g. appname-DEV-WIN, appname-DEV-RHEL) and maintenance window tags (format: schedule-duration-cutoff-timezone) before proceeding.
+
+Step 2: Patch baselines are published.
+  Check: Has Systems Manager Patch Manager made new patches available via the OS-specific custom patch baselines?
+  - If yes: Go to Step 3.
+  - If no: Wait for new patches to become available, or define/update custom patch baselines with the required approval rules.
+
+Step 3: Apply patches to the development environment.
+  Check: Has the custom automation code configured Patch Manager using the Patch Group and Maintenance Window tags and applied patches to the development environment?
+  - If yes: Go to Step 4.
+  - If no: Run the automation (automate-patch Lambda) to set up patching and apply patches to development.
+
+Step 4: Verify the development environment.
+  Check: Have the application development and support teams tested and verified that the application works correctly in the development environment after patching?
+  - If yes: Go to Step 5.
+  - If no (application encounters problems): Application teams request the cloud services team to halt patching to all other patch groups and environments by disabling maintenance windows or deregistering the patch task. Investigate and resolve the issue. Return to Step 3.
+
+Step 5: Apply patches to non-production environments and verify.
+  Check: Have patches been deployed to all other non-production environments, and has the application been tested and verified to work correctly in each?
+  - If yes: Go to Step 6.
+  - If no (issues found in any non-production environment): Application teams request the cloud services team to halt patching to the production environment. Investigate and resolve the issue. Return to Step 5 for the affected environment.
+
+Step 6: Apply patches to the production environment.
+  Check: Have all non-production environments been patched and verified successfully?
+  - If yes: Apply patches to production. END (patching cycle complete).
+  - If no: Do not proceed to production. Return to Step 5.

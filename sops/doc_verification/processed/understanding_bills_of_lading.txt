@@ -1,0 +1,79 @@
+SOP: Understanding Bills of Lading (BOL)
+
+Step 1: Verify "Ship From" information.
+  Check: Does the "Ship From" box on the BOL show the correct Gemini shipping location?
+  - If yes: Go to Step 2.
+  - If no: Correct the Ship From address before proceeding.
+
+Step 2: Verify "Ship To" destination.
+  Check: Is the "Ship To (Destination)" address the correct physical address of the customer (never a PO Box)?
+  - If yes: Go to Step 3.
+  - If no: Correct the Ship To address. Move any additional shipping instructions to the "Special Instructions" section.
+
+Step 3: Verify freight charge terms.
+  Check: Is the "Freight Charge Terms" section filled in with one of: Prepaid & Add, Paid, or Collect? Is the Pro Number sticker NOT covering the freight term?
+  - If yes: Go to Step 4.
+  - If no: Correct the freight terms. Ensure the Pro Number sticker does not obscure the freight charge terms (covering them causes the carrier to default charges to the shipper).
+
+Step 4: Verify customer order number.
+  Check: Is the PO number listed under "Customer Order Number" (if applicable — not all BOLs have one)?
+  - If yes: Go to Step 5.
+  - If no: Enter the PO number if one exists for this order.
+
+Step 5: Check for hazardous materials.
+  Check: Does the shipment contain any products classified as hazardous by DOT regulations?
+  - If yes: Ensure an "X" is entered in the "H.M." column next to each hazardous commodity description. Go to Step 6.
+  - If no: Go to Step 6.
+
+Step 6: Verify weights.
+  Check: Do the individual item weights in the "Carrier Information" section add up to the total weight at the bottom, including pallet weight (40 lbs per pallet)?
+  - If yes: Go to Step 7.
+  - If no: Correct the weights to match.
+
+Step 7: Verify piece count.
+  Check: Does the sum of all pieces match the total piece count at the bottom of the "Quantity Section"?
+  - If yes: Go to Step 8.
+  - If no: Correct the piece counts.
+
+Step 8: Verify DOT labelling.
+  Check: Is the outermost packaging of all hazardous materials labelled correctly per DOT standards?
+  - One gallon or less (shipped in UN-rated box): Must have "Limited Quantity" diamond label.
+  - Five gallon buckets: Must have the correct Class 3 (Flammable) and/or Class 8 (Corrosive) labels.
+  - Drums: Must have the appropriate hazard class labels.
+  - If yes: Go to Step 9.
+  - If no: Apply correct DOT labels. Shipping MUST verify marking and labelling is present and compliant before loading on a trailer. If unsure, defer to supervisor.
+
+Step 9: Determine placarding requirements.
+  Check: Is the aggregate gross weight of all hazardous materials 454 kg (1,001 lbs) or more?
+  - If yes: Placards are required on all 4 sides of the trailer. If any single hazard class exceeds 4,000 kg (8,820 lbs), the appropriate UN identification number must accompany the placards. Go to Step 10.
+  - If no (under 454 kg): No placards required. Go to Step 10.
+
+Step 10: Verify product information section.
+  Check: Does the commodity description section correctly identify all materials with proper UN description, commodity, class, packing group, and container size for hazardous materials (or commodity and container size for non-hazardous)? Is the freight class correctly populated?
+  - If yes: Go to Step 11.
+  - If no: Correct the descriptions. If a generic name or description appears instead of the proper DOT description, notify the IT department. Look up correct descriptions in 40CFR shipping tables or contact Gemini's regulatory department.
+
+Step 11: Verify third-party billing (if applicable).
+  Check: Are the freight terms "Third Party"?
+  - If yes: Write the third-party company name, address, telephone number, and any relevant billing information in the third-party section. Include any quote numbers or delivery guarantees. Go to Step 12.
+  - If no: Go to Step 12.
+
+Step 12: Check special instructions.
+  Check: Does the sales order indicate any special delivery needs (lift gate, inside delivery, residential delivery, limited access fee, freeze protection)?
+  - If yes: Check the applicable box(es) in the Special Instructions section. Go to Step 13.
+  - If no: Go to Step 13.
+
+Step 13: Shipper signs the BOL.
+  Check: Has the Gemini employee signed and dated the "Shipper Signature/Date" section legibly?
+  - If yes: Go to Step 14.
+  - If no: Sign and date the BOL. The signature attests that all information is accurate and DOT-compliant; the signer is responsible for any errors.
+
+Step 14: Complete loading and carrier verification.
+  Check: Are the "Trailer Loaded" and "Freight Counted" sections filled in correctly? Has the freight been counted by both the shipper and the carrier? Does the driver have proper certifications to transport the products?
+  - If driver has proper licensing: Go to Step 15.
+  - If driver does NOT have proper licensing: Do NOT release the shipment with that driver. END (until a properly certified driver is available).
+
+Step 15: Offer placards and obtain driver signature.
+  Check: Has the driver been offered placards (and given the correct ones if needed)? Has the driver signed and dated the "Carrier Signature/Pickup Date" section, including the trailer number?
+  - If yes: File a copy of the signed BOL with the shipment paperwork. END (shipment released).
+  - If no: Provide correct placards if needed and have the driver sign. Then file the copy.

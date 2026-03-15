@@ -1,0 +1,45 @@
+SOP: Transportation of Temperature-Sensitive Medicinal Products for Clinical Trials
+
+Step 1: Confirm staff training.
+  Check: Has the staff member who will collect and transport the temperature-sensitive medicinal product (MP) received study-specific training, and is this recorded in the study training log?
+  - If yes: Go to Step 2.
+  - If no: Complete study-specific training and record it in the training log before handling any MPs.
+
+Step 2: Verify MP suitability.
+  Check: Has the Pharmacy Clinical Trials Manager confirmed that the temperature-sensitive MP received for the trial is suitable for use?
+  - If yes: Go to Step 3.
+  - If no: The Pharmacy Clinical Trials Manager must verify suitability and ensure suitable packaging and temperature monitoring equipment (e.g. thermometers) are available.
+
+Step 3: Inspect the MP before transport.
+  Check: Does the MP appear undamaged?
+  - If yes: Go to Step 4.
+  - If no (MP appears damaged): Do NOT administer the MP. Return it unused to the Clinical Trials Pharmacy Department, who will advise on next steps. END.
+
+Step 4: Pack the MP for transport.
+  Check: Is the MP in its original packaging and placed in a suitable cool pack/box (NOT a domestic cool box)?
+  - If yes: Go to Step 5.
+  - If no: Keep the MP in original packaging and place it in a suitable cool pack/box. If transporting by vehicle (e.g. home visit), place the cool pack/box in the boot of the car, not on a car seat.
+
+Step 5: Place temperature monitoring device.
+  Check: Has a maximum/minimum calibrated temperature probe or Sponsor-approved temperature recording device been placed in the middle of the cool pack/box, with the display panel visible outside?
+  - If yes: Go to Step 6.
+  - If no: Place the device correctly. It must remain inside the cool pack/box for the entire journey.
+
+Step 6: Check temperature before departure.
+  Check: Is the temperature inside the container within the required range specified by the manufacturer/study protocol?
+  - If yes: Record the temperature (if required by Sponsor instructions). Go to Step 7.
+  - If no: Do NOT proceed with transport. Contact the Clinical Trials Pharmacy Department for advice. END.
+
+Step 7: Transport the MP.
+  Check: Minimize the time between removing the MP from cold storage and use. Transport is in progress.
+  - Go to Step 8 upon arrival at the destination.
+
+Step 8: Check temperature upon arrival.
+  Check: Is the temperature inside the container still within the required range, prior to administering the medication?
+  - If yes: Record the temperature (if required by Sponsor instructions). Go to Step 9.
+  - If no (temperature has gone outside the required range at any point during transport): Do NOT administer the MP. Contact the Clinical Trials Pharmacy Department for advice on next steps. END.
+
+Step 9: Administer or return the MP.
+  Check: Is the MP being dispensed and administered to the participant?
+  - If yes: Administer according to the study protocol. END.
+  - If no (MP is not dispensed for clinical reasons): Return the MP to the Clinical Trials Pharmacy Department in the cool box with the cold chain maintained if possible. The Pharmacy will store it as quarantined stock. END.
