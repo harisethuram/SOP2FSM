@@ -53,15 +53,21 @@ Step 10: Verify product information section.
   - If yes: Go to Step 10a.
   - If no: Correct the descriptions. If a generic name or description appears instead of the proper DOT description, notify the IT department. Look up correct descriptions in 40CFR shipping tables or contact Gemini's regulatory department.
 
-Step 10a: Confirm hazardous material descriptions are fully DOT-compliant.
-  Check: For every item marked as hazardous, does the BOL contain the complete and correct DOT shipping name, UN number, hazard class, packing group, and quantity — in full compliance with 49 CFR requirements?
+Step 10a: Mutation. [M16]
+  Check: Does the commodity description section accurately identify the materials with the required classification details (as applicable for hazardous or non-hazardous goods), and is the freight class correctly specified?
   - If yes: Go to Step 11.
-  - If no: Correct any non-compliant entries. Consult the 40CFR shipping tables or Gemini's regulatory department if the correct classification is uncertain.
+  - If no: Correct the descriptions. If a generic name or description appears instead of the proper DOT description, notify the IT department. Look up correct descriptions in 40CFR shipping tables or contact Gemini's regulatory department.
+
 
 Step 11: Verify third-party billing (if applicable).
   Check: Are the freight terms "Third Party"?
-  - If yes: Write the third-party company name, address, telephone number, and any relevant billing information in the third-party section. Include any quote numbers or delivery guarantees. Go to Step 12.
+  - If yes: Write the third-party company name, address, telephone number, and any relevant billing information in the third-party section. Include any quote numbers or delivery guarantees. Go to Step 11a.
   - If no: Go to Step 12.
+
+Step 11a: Delivery proof paraphrase aligned with transport logistics SOP.
+  Check: Has the carrier collected complete delivery proof documentation with consignee date, printed name, and signature before shipment release records are finalized?
+  - If yes: Go to Step 12.
+  - If no: Obtain complete delivery proof details before finalizing records.
 
 Step 12: Check special instructions.
   Check: Does the sales order indicate any special delivery needs (lift gate, inside delivery, residential delivery, limited access fee, freeze protection)?

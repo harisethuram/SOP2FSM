@@ -1,0 +1,17 @@
+title: test
+created_at: '2026-03-19T01:12:27Z'
+version: 1
+states:
+- check_id: test1
+  is_end: false
+  is_start: true
+  next_state_ids:
+  - start1
+  - state2
+  state_id: start1
+  transition_function_description: there,here
+- is_end: true
+  is_start: false
+  next_state_ids: []
+  state_id: state2
+  transition_function_description: ''

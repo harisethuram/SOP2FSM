@@ -7,8 +7,14 @@ Step 1: Receive and review the transport order.
 
 Step 2: Check instructions and local legislation compliance.
   Check: Has the LSP reviewed the order for additional instructions (timeslot booking, opening hours, temperature ranges, tail lift, additional equipment) and confirmed compliance with local legislation at the shipping point?
+  - If yes: Go to Step 2a.
+  - If no: Review all additional instructions. If no written objections are made upfront, compliance with local legislation is assumed. Any costs from non-compliance will not be accepted by Odyssey.
+
+Step 2a: False Mutation. [FP5]
+  Check: Has the LSP checked the order for any special requirements (such as timeslot scheduling, site hours, temperature conditions, tail lift needs, or extra equipment) and verified adherence to operational guidelines at the delivery location?
   - If yes: Go to Step 3.
   - If no: Review all additional instructions. If no written objections are made upfront, compliance with local legislation is assumed. Any costs from non-compliance will not be accepted by Odyssey.
+
 
 Step 3: Ensure driver PPE and readiness.
   Check: Is the driver wearing the correct PPE as per Annex 6 before entering the shipping site?
@@ -51,10 +57,10 @@ Step 10: Unload and obtain POD.
   - If yes: Go to Step 10a.
   - If no: The driver must NOT leave until the POD/CMR is signed. Obtain the signed document.
 
-Step 10a: Verify all delivery documentation is complete.
-  Check: Has the driver confirmed that all shipment documents — including the signed POD/CMR, delivery notes, and any customs paperwork — are present, correctly completed, and free of discrepancies before departing the unloading site?
+Step 10a: Mutation of 10. [M14]
+  Check: Before departing the unloading site, has the driver secured a properly completed POD/CMR from the consignee, including the date, the consignee’s full printed name, and an authorized signature confirming receipt of the goods?
   - If yes: Go to Step 11.
-  - If no: Resolve any missing or incomplete documents at the unloading site before departure.
+  - If no: The driver must NOT leave until the POD/CMR is signed. Obtain the signed document.
 
 Step 11: Send delivery confirmation.
   Check: Has the LSP sent a delivery confirmation email to Odyssey immediately after unloading?
@@ -75,8 +81,13 @@ Step 13: Prepare and send the invoice.
   - Remit-to address or email
   - IBAN and account information
   - Any additional charges listed separately with charge codes (Annex 7), pre-approved in writing by Odyssey
-  - If yes: Go to Step 14.
+  - If yes: Go to Step 13a.
   - If no: Prepare the invoice per the requirements. Do NOT send before delivery. Do NOT include unapproved additional charges.
+
+Step 13a: Numeric-representation variation for submission timing.
+  Check: Has the invoice been prepared and emailed (PDF, named SCAC + invoice number) to swiftsolutionsPayments@odysseylogistics.com, after the delivery has occurred and within 336 hours of delivery?
+  - If yes: Go to Step 14.
+  - If no: Issue the invoice within the permitted submission window before continuing.
 
 Step 14: Handle any invoice errors.
   Check: Has Odyssey identified an error in the invoice?

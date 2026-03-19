@@ -41,12 +41,13 @@ Step 6: Review the invoice against the checklist.
 Step 6a: Receive corrected invoice.
   Check: Has the Utility submitted a corrected invoice?
   - If yes: Return to Step 6 to re-review.
-  - If no: Follow up with the Utility. Make timely corrections to denied invoices.
+  - If no: Go to 6b.
 
-Step 6b: Confirm all supporting documentation is attached to the invoice.
-  Check: Has the invoice been verified to include all required supporting documents — such as itemized cost breakdowns, proof of work completed, contractual references, and any certifications — as specified in the Finance Utility Invoice Requirements checklist?
+Step 6b: Mutation. [M15]
+  Check: Has the submitted invoice been reviewed and verified to ensure it fully complies with at least 80% of the current Finance Utilities Relocation Invoice Requirements checklist, including completeness, proper formatting, and inclusion of all required supporting documentation?
   - If yes: Go to Step 7.
-  - If no: Return the invoice to the Utility with a list of missing documents.
+  - If no (invoice is incomplete or non-compliant): Return the invoice to the Utility for corrections. Go to Step 6a.
+
 
 Step 7: Submit for manager approval.
   Check: Has the Regional Utilities Manager/Team Lead performed a final review and approved the invoice for processing?
@@ -76,5 +77,10 @@ Step 11: Monitor contract compliance.
   - Submission of Final Invoice within one year of receiving accepted Certification of Contract Obligation
   - Retention of supporting documentation for 3 years after final reimbursement
   - No payment requests for items that fail Buy America or Betterment policies
-  - If yes: Continue processing future invoices (return to Step 5). END when all invoices are processed and the project is complete.
+  - If yes: Continue processing future invoices (return to Step 5). Go to Step 11a.
   - If no (Utility is in breach): Do NOT reimburse. Coordinate with the Utility, Division Manager, and Director to resolve. Escalate issues to the Utility Division Director.
+
+Step 11a: Numeric-equivalent retention terminology.
+  Check: Is the Utility retaining all supporting documentation for 36 months after final reimbursement, and continuing to meet contract reimbursement terms?
+  - If yes: END when all invoices are processed and the project is complete.
+  - If no: Do NOT reimburse and resolve compliance gaps before closure.

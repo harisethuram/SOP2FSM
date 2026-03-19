@@ -1,0 +1,27 @@
+cloud:
+M1: aws/patch_processing - Step 0, Inc. w/ aws/maintenance_window Step 2, aws/schedule_automations Step 1
+M2: aws/patch_processing - Step 3a, Inc. w/ aws/patch_processing Step 3
+M3: aws/maintenance_window - Step 2a, Inc. w/ aws/maintenance_window Step 2
+M4: aws/maintenance_window - Step 2a, Inc. w/ aws/maintenance_window Step 6
+FP1: aws/maintenance_window - Step 3a, FP w/ aws/maintenance_window Step 3
+FP2: aws/patch_processing - Step 1b, FP w/ aws/patch_processing Step 1a
+
+medical:
+M5: medical/nhs/sop_creation - Step 9a, Inc. w/ medical/nhs/sop_creation Step 9
+M6: medical/nhs/establishing_and_maintaining_tmf_isf - Step 1a, Inc. w/ medical/nhs/establishing_and_maintaining_tmf_isf Step 1
+M7: medical/nhs/establishing_and_maintaining_tmf_isf - Step 10a, Inc. w/ medical/nhs/establishing_and_maintaining_tmf_isf Step 10
+M8: medical/nhs/expediting_urgent_public_health_research - Step 1a, Inc. w/ medical/nhs/expediting_urgent_public_health_research Step 1
+M9: medical/nhs/management_of_research_samples - Step 7a, Inc. w/ medical/nhs/management_of_research_samples Step 7
+M10: medical/nhs/transportation_of_temperature_sensitive - Step 6a, Inc. w/ medical/nhs/management_of_research_samples Step 8
+M11: medical/nhs/transportation_of_temperature_sensitive - Step 4a, Inc. w/ medical/nhs/management_of_research_samples Step 4
+FP3: medical/nhs/sop_creation - Step 8a, FP w/ medical/nhs/sop_creation Step 4
+FP4: medical/nhs/management_of_research_samples - Step 4a, FP w/ medical/nhs/management_of_research_samples Step 4
+
+doc_verification:
+M12: doc_verification/color_creek/accounts_payable - Step 4b, Inc. w/ doc_verification/color_creek/accounts_payable Step 4
+M13: doc_verification/york_u/payment_requisition - Step 9a, Inc. w/ doc_verification/york_u/payment_requisition Step 9
+M14: doc_verification/odyssey/transport_logistics_and_invoicing - Step 10a, Inc. w/ doc_verification/odyssey/transport_logistics_and_invoicing Step 10
+M15: doc_verification/tenessee_dot/utilities_invoice_sop - Step 6b, Inc. w/ doc_verification/tenessee_dot/utilities_invoice_sop Step 6
+M16: doc_verification/gemini/understanding_bills_of_lading - Step 10a, Inc. w/ doc_verification/gemini/understanding_bills_of_lading Step 10
+FP5: doc_verification/odyssey/transport_logistics_and_invoicing - Step 2a, FP w/ doc_verification/odyssey/transport_logistics_and_invoicing Step 2
+FP6: doc_verification/color_creek/accounts_payable - Step 8a, FP w/ doc_verification/color_creek/accounts_payable Step 8

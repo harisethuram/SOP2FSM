@@ -1,0 +1,12 @@
+sop_id: loa_verify
+states:
+- state_id: check_quantity_x
+  check_id: check_quantity_x
+  is_start: true
+  is_end: false
+  transition_function_description: start,end
+  next_state_ids:
+  - accept
+  - reject
+title: verify loa
+version: 1

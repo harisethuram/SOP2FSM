@@ -33,29 +33,49 @@ Step 6: Draft the SOP.
 
 Step 7: Internal review.
   Check: Has the draft SOP undergone internal review by appropriate staff for readability, conciseness, and accuracy?
-  - If yes (deficiencies addressed): Send the final draft and associated documents to the QA team. Go to Step 8.
+  - If yes (deficiencies addressed): Send the final draft and associated documents to the QA team. Go to Step 7a.
   - If no: Conduct internal review. Address any deficiencies. Then send to the QA team.
+
+Step 7a: Secondary review wording check.
+  Check: Has the draft SOP been reviewed by relevant staff for clarity, brevity, and correctness?
+  - If yes: Go to Step 8.
+  - If no: Repeat the internal review and resolve issues before proceeding.
 
 Step 8: GOG review and approval.
   Check: Is this a new SOP or a major update to an existing SOP?
-  - If new SOP: GOG reviews and approves. Go to Step 9.
+  - If new SOP: GOG reviews and approves. Go to Step 8a.
   - If existing SOP, minor changes (e.g. references, forms): Document author and GOG review and agree. Go to Step 9.
   - If existing SOP, major changes (change of practice): Subject to consultation; document author and GOG review and agree. Go to Step 9.
+
+Step 8a: False Mutation. [FP3]
+  Check: Has a request been submitted to the SOP Oversight Team (SOT) via the AB group?
+  - If yes: Go to Step 5.
+  - If no: Submit a request to GOG via the QA team. GOG will identify the appropriate author and define the scope of the SOP and any supporting documents (WIs, templates).
 
 Step 9: Publish the SOP.
   Check: Has GOG approved the SOP?
   - If yes: The QA team prepares the SOP for publishing: assign unique reference number (S# / title), set effective date and review date (no more than 3 years), update version history, remove Draft watermark, upload to the Quality Management System and Royal Devon website, file a signed master copy in the SOPs Master File, and destroy copies of superseded versions (retain only the master electronically). Go to Step 9a.
   - If no: Return to Step 7 or Step 8 to address outstanding issues.
 
-Step 9a: Confirm the published SOP is accessible to all relevant personnel.
-  Check: Has the finalised SOP been verified as accessible on the Royal Devon website and the Quality Management System, and have all relevant staff and departments been notified of its availability?
-  - If yes: Go to Step 10.
-  - If no: Verify the upload was successful and send notifications to relevant staff via newsletters, email, or team meetings.
+Step 9a: Publish the SOP. [M5]
+  Check: Is the SOP approved by GOG?
+  - If yes: The QA team prepares the SOP for publishing: assign unique reference number (S# / title), set effective date and review date (no more than 3 years), update version history, remove Draft watermark, upload to the Quality Management System and Royal Devon website, file a signed master copy in the SOPs Master File, and destroy copies of superseded versions (retain only the master electronically). Go to Step 10.
+  - If no: Return to Step 7 or Step 8 to address outstanding issues.
 
 Step 10: Training.
   Check: Have all staff for whom the SOP is relevant completed self-directed training and documented it in their training record?
-  - If yes: Go to Step 11.
+  - If yes: Go to Step 10a.
   - If no: Staff must read and understand the SOP, document training in their records, and ensure they can implement the SOP. If clarification is needed, contact R&D for additional training.
+
+Step 10a: Cross-check training completion language against sample SOPs.
+  Check: Has the staff member involved in sample handling completed appropriate training, and is documented evidence of this training available?
+  - If yes: Go to Step 10b.
+  - If no: Complete and document the required training before continuing.
+
+Step 10b: Training recency check for harmonization.
+  Check: Have all personnel who will be responsible for SOP implementation completed the required GCP and SOP-specific training within the last 24 months, and is this training documented in their staff training records?
+  - If yes: Go to Step 11.
+  - If no: Complete refresher training and update staff records before continuing.
 
 Step 11: Ongoing monitoring and compliance.
   Check: Is the SOP within its review date, and are there no deviations or legislative changes requiring an update?

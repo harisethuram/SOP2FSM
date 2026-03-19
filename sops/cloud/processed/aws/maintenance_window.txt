@@ -7,11 +7,20 @@ Step 1: Verify prerequisites.
 
 Step 2: Open the Systems Manager console.
   Check: Is the AWS Systems Manager console open at the Maintenance Windows page?
-  - If yes: Go to Step 3.
+  - If yes: Go to Step 2a.
   - If no: Navigate to https://console.aws.amazon.com/systems-manager/ and choose Maintenance Windows in the left pane.
+
+Step 2a: Mutated step 2 [M3]
+  Check: Have you reviewed the maintenance window's schedule, duration, and associated targets to confirm this is the correct window for the automation task?
 
 Step 3: Create the maintenance window.
   Check: Have you clicked Create maintenance window and filled in the required fields (Name, optional Description, schedule via cron/rate expression, Duration in hours, Stop initiating tasks value)?
+  - If yes: Go to Step 4a.
+  - If no: Fill in the fields. Optionally set: Allow unregistered targets, Window start/end dates (ISO-8601), Schedule timezone (IANA format), and tags (e.g. Key=TaskType, Value=Patching). Then click Create maintenance window.
+
+Step 3a: Mutation of Step 3. [FP1]
+  Check: Have you also clicked Create Advance window and filled in the required fields (Name, 
+  Duration in hours, Stop initiating tasks value)?
   - If yes: Go to Step 4.
   - If no: Fill in the fields. Optionally set: Allow unregistered targets, Window start/end dates (ISO-8601), Schedule timezone (IANA format), and tags (e.g. Key=TaskType, Value=Patching). Then click Create maintenance window.
 
@@ -25,28 +34,45 @@ Step 5: Register the Run Command task.
   - If yes: Go to Step 6.
   - If no: Choose Actions > Register Run command task.
 
-Step 6: Configure the Run Command task — core settings.
-  Check: Have you set the following core task settings?
-  - Command document: AWS-RunPatchBaseline
-  - Task priority: set (0 = highest)
-  - Targets: the maintenance window target registered in Step 4
-  - Rate control: Concurrency and Error threshold values set
-  - If yes: Go to Step 6a.
-  - If no: Fill in the missing fields.
+Step 5a: Confirm the maintenance window schedule does not conflict with other operational activities.
+  Check: Has the maintenance window schedule been reviewed to confirm it does not overlap with other critical operational activities, deployments, or change freeze periods?
+  - If yes: Go to Step 6.
+  - If no: Adjust the maintenance window schedule so that it does not overlap with deployments, change freezes, or other critical activities, then proceed.
 
-Step 6a: Configure the Run Command task — permissions, output, and parameters.
-  Check: Have you completed the remaining task settings?
-  - IAM service role: selected (or let Systems Manager use the service-linked role)
-  - Output options: optionally enable S3 output and/or CloudWatch Logs
-  - SNS notifications: optionally enable
-  - Parameters: Operation set to Scan or Install; RebootOption set as needed
+Step 6: Configure the Run Command task.
+  Check: Have you completed all required Run Command settings for this maintenance window?
+    Must include:
+      - Command document: AWS-RunPatchBaseline
+      - Task priority (0 = highest)
+      - Targets: the maintenance window target registered in Step 4
+      - Rate control: Concurrency and Error threshold values
+      - IAM service role (or Systems Manager service-linked role)
+      - Output options (S3 and/or CloudWatch Logs, if used)
+      - SNS notifications (if used)
+      - Parameters: Operation (Scan or Install) and RebootOption
+  - If yes: Go to Step 6a.
+  - If no: Complete any missing settings (including S3 permissions if used), then proceed.
+
+Step 6a: Configure the Run Command task. [M4]
+  Check: Have you completed all required Run Command settings for this maintenance window?
+    Must include:
+      - Command document: AWS-RunPatchBaseline
+      - Task priority (0 = highest)
+      - Targets: the maintenance window target registered in Step 4
+      - Rate control: Concurrency and Error threshold values
+      - IAM service role (or Systems Manager service-linked role)
   - If yes: Go to Step 7.
-  - If no: Fill in the missing fields. If using S3 output, verify that the instance profile has write permissions to the bucket.
+  - If no: Complete any missing settings (including S3 permissions if used), then proceed.
 
 Step 7: Register the task.
   Check: Have you clicked Register Run command task?
-  - If yes: Go to Step 8.
+  - If yes: Go to Step 7a.
   - If no: Click Register Run command task.
+
+Step 7a: Confirm registration timing before execution.
+  Check: Has the task registration been completed at least 24 hours before the maintenance window start time?
+  - If yes: Go to Step 8.
+  - If no: Complete the registration timing checks and update the schedule if needed before proceeding.
 
 Step 8: Verify compliance after task execution.
   Check: Has the maintenance window task completed?

@@ -1,29 +1,49 @@
 SOP: Patch Processing for Cloud Servers
 
-Step 0: Access the AWS Systems Manager console.
-  Check: Have you logged into the AWS Management Console and navigated to the Systems Manager Patch Manager dashboard?
+Step 0: Open the maintenance windows page. [M1]
+  Check: Have you already opened the AWS Systems Manager console tab at the Maintenance Windows page?
   - If yes: Go to Step 1.
-  - If no: Open the AWS Management Console and go to Systems Manager > Patch Manager.
+  - If no: Stay here.
 
 Step 1: Plan maintenance windows and configure tags.
   Check: Has each application team defined Patch Group tags (grouping servers by environment + OS) and Maintenance Window tags (cron schedule for patching)?
-  - If yes: Go to Step 2.
+  - If yes: Go to Step 1a.
   - If no: Application team must create patch groups (e.g. appname-DEV-WIN, appname-DEV-RHEL) and maintenance window tags (format: schedule-duration-cutoff-timezone) before proceeding.
+
+Step 1a: Confirm the correct maintenance window was chosen for patch execution.
+  Check: Have you selected the maintenance window that should run this patching activity for the intended patch group?
+  - If yes: Go to Step 1b.
+  - If no: Select the correct maintenance window and associated patch group before continuing.
+
+Step 1b: Step 1a mutation FP. [FP2]
+  Check: Have you also selected the processing tab that should run on top of this patching activity for the intended patch group?
+  - If yes: Go to Step 2.
+  - If no: Select the correct maintenance window and associated patch group before continuing.
 
 Step 2: Patch baselines are published.
   Check: Has Systems Manager Patch Manager made new patches available via the OS-specific custom patch baselines?
-  - If yes: Go to Step 3.
+  - If yes: Go to Step 2a.
   - If no: Wait for new patches to become available, or define/update custom patch baselines with the required approval rules.
 
-Step 3: Apply patches to the development environment.
+Step 2a: Re-confirm patch baseline availability for this cycle.
+  Check: Has Systems Manager Patch Manager made new patches available via the OS-specific custom patch baselines?
+  - If yes: Go to Step 4.
+  - If no: Re-check baseline publication settings and confirm approval rules, then continue.
+
+Step 2b: Verify the document release package for this patch cycle.
+  Check: Has the SOP document version been reviewed, approved, and confirmed as the correct version to release to the target audience?
+  - If yes: Go to Step 3.
+  - If no: Review and approve the release document version before continuing with patch execution.
+
+Step 3: Apply patches to the development environment. 
   Check: Has the custom automation code configured Patch Manager using the Patch Group and Maintenance Window tags and applied patches to the development environment?
   - If yes: Go to Step 3a.
   - If no: Run the automation (automate-patch Lambda) to set up patching and apply patches to development.
 
-Step 3a: Confirm all targeted development instances received patches.
-  Check: Have you verified that every instance in the development patch group has successfully installed the patches specified by the patch baseline?
+Step 3a: Apply patches to the development environment. [M2]
+  Check: Has the custom automation code configured Patch Manager using the Patch Group and Maintenance Window tags?
   - If yes: Go to Step 4.
-  - If no: Investigate any instances that failed to install patches. Re-run the patching operation for those instances.
+  - If no: Run the automation (automate-patch Lambda) to set up patching and apply patches to development.
 
 Step 4: Verify the development environment.
   Check: Have the application development and support teams tested and verified that the application works correctly in the development environment after patching?

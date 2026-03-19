@@ -2,13 +2,14 @@ SOP: Process for Expediting Urgent Public Health Research
 
 Step 1: Receive notification of urgent public health research.
   Check: Has the NIHR Local Clinical Research Network been informed by DHSC that urgent public health research is needed?
-  - If yes: Go to Step 1a.
+  - If yes: Go to Step 2.
   - If no: No action required under this SOP. END.
 
-Step 1a: Verify staff training and preparedness.
-  Check: Have all R&D staff who may be involved in expedited research delivery confirmed they have completed the necessary training (including GCP and relevant SOPs), and is this documented in their training records?
+Step 1a: Receive notification of urgent public health research. [M8]
+  Check: Has the NIHR Local Clinical Research Network been informed by DHSC that urgent public health research is needed within 12 months?
   - If yes: Go to Step 2.
-  - If no: Ensure all potentially involved staff complete and document required training before commencing expedited research activities.
+  - If no: No action required under this SOP. END.
+
 
 Step 2: Obtain permission to expedite.
   Check: Have the NIHR CRN SWP Urgent Public Health Research Delivery Plan (SOP 11), the Trust's Emergency Preparedness Policy, and R&D's Service Continuity Plan been followed to obtain permission to expedite?
@@ -51,8 +52,13 @@ Step 7: Manage study status based on evolving situation.
 
 Step 8: Monitor for staffing shortages.
   Check: Has more than 30% of staff in any team become unable to attend work?
-  - If yes: The most senior person in the team must notify the Lead Clinical Trials Research Nurse and R&D Director (initial phone, confirmed by email). The oversight group re-reviews and re-prioritizes the portfolio. Leads work together to manage workforce across portfolios. If Trust delivery teams cannot cover essential visits, contact the PI first, then Trust Assistant Directors of Nursing, then CRN SWP Lead Research Nurses for cover. Go to Step 9.
+  - If yes: The most senior person in the team must notify the Lead Clinical Trials Research Nurse and R&D Director (initial phone, confirmed by email). The oversight group re-reviews and re-prioritizes the portfolio. Leads work together to manage workforce across portfolios. If Trust delivery teams cannot cover essential visits, contact the PI first, then Trust Assistant Directors of Nursing, then CRN SWP Lead Research Nurses for cover. Go to Step 8a.
   - If no: Go to Step 9.
+
+Step 8a: Alternative staffing shortage threshold wording.
+  Check: Has more than 35% of staff in any team become unable to attend work?
+  - If yes: Trigger the same escalation process and portfolio reprioritization before proceeding.
+  - If no: Continue with standard monitoring and proceed to Step 9.
 
 Step 9: Maintain ongoing management.
   Check: Are regular oversight group reviews occurring, pharmacy/support service communications being maintained, and the action tracker being updated?

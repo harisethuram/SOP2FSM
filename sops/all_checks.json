@@ -1,0 +1,1522 @@
+[
+  {
+    "id": "aws/patch_processing/step_0",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "patch_processing",
+    "step": "step_0",
+    "check_text": "Have you already opened the AWS Systems Manager console tab at the Maintenance Windows page?"
+  },
+  {
+    "id": "aws/patch_processing/step_1",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "patch_processing",
+    "step": "step_1",
+    "check_text": "Has each application team defined Patch Group tags (grouping servers by environment + OS) and Maintenance Window tags (cron schedule for patching)?"
+  },
+  {
+    "id": "aws/patch_processing/step_1a",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "patch_processing",
+    "step": "step_1a",
+    "check_text": "Have you selected the maintenance window that should run this patching activity for the intended patch group?"
+  },
+  {
+    "id": "aws/patch_processing/step_1b",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "patch_processing",
+    "step": "step_1b",
+    "check_text": "Have you also selected the processing tab that should run on top of this patching activity for the intended patch group?"
+  },
+  {
+    "id": "aws/patch_processing/step_2",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "patch_processing",
+    "step": "step_2",
+    "check_text": "Has Systems Manager Patch Manager made new patches available via the OS-specific custom patch baselines?"
+  },
+  {
+    "id": "aws/patch_processing/step_2a",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "patch_processing",
+    "step": "step_2a",
+    "check_text": "Has Systems Manager Patch Manager made new patches available via the OS-specific custom patch baselines?"
+  },
+  {
+    "id": "aws/patch_processing/step_2b",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "patch_processing",
+    "step": "step_2b",
+    "check_text": "Has the SOP document version been reviewed, approved, and confirmed as the correct version to release to the target audience?"
+  },
+  {
+    "id": "aws/patch_processing/step_3",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "patch_processing",
+    "step": "step_3",
+    "check_text": "Has the custom automation code configured Patch Manager using the Patch Group and Maintenance Window tags and applied patches to the development environment?"
+  },
+  {
+    "id": "aws/patch_processing/step_3a",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "patch_processing",
+    "step": "step_3a",
+    "check_text": "Has the custom automation code configured Patch Manager using the Patch Group and Maintenance Window tags?"
+  },
+  {
+    "id": "aws/patch_processing/step_4",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "patch_processing",
+    "step": "step_4",
+    "check_text": "Have the application development and support teams tested and verified that the application works correctly in the development environment after patching?"
+  },
+  {
+    "id": "aws/patch_processing/step_5",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "patch_processing",
+    "step": "step_5",
+    "check_text": "Have patches been deployed to all other non-production environments, and has the application been tested and verified to work correctly in each?"
+  },
+  {
+    "id": "aws/patch_processing/step_6",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "patch_processing",
+    "step": "step_6",
+    "check_text": "Have all non-production environments been patched and verified successfully?"
+  },
+  {
+    "id": "aws/maintenance_window/step_1",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_1",
+    "check_text": "Have roles and permissions for Maintenance Windows in AWS Systems Manager been configured?"
+  },
+  {
+    "id": "aws/maintenance_window/step_2",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_2",
+    "check_text": "Is the AWS Systems Manager console open at the Maintenance Windows page?"
+  },
+  {
+    "id": "aws/maintenance_window/step_2a",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_2a",
+    "check_text": "Have you reviewed the maintenance window's schedule, duration, and associated targets to confirm this is the correct window for the automation task?"
+  },
+  {
+    "id": "aws/maintenance_window/step_3",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_3",
+    "check_text": "Have you clicked Create maintenance window and filled in the required fields (Name, optional Description, schedule via cron/rate expression, Duration in hours, Stop initiating tasks value)?"
+  },
+  {
+    "id": "aws/maintenance_window/step_3a",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_3a",
+    "check_text": "Have you also clicked Create Advance window and filled in the required fields (Name, Duration in hours, Stop initiating tasks value)?"
+  },
+  {
+    "id": "aws/maintenance_window/step_4",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_4",
+    "check_text": "In the maintenance window details page, have you chosen Actions > Register targets and specified the instance tags to identify the managed nodes?"
+  },
+  {
+    "id": "aws/maintenance_window/step_5",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_5",
+    "check_text": "Have you chosen Actions > Register Run command task in the maintenance window details page?"
+  },
+  {
+    "id": "aws/maintenance_window/step_5a",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_5a",
+    "check_text": "Has the maintenance window schedule been reviewed to confirm it does not overlap with other critical operational activities, deployments, or change freeze periods?"
+  },
+  {
+    "id": "aws/maintenance_window/step_6",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_6",
+    "check_text": "Have you completed all required Run Command settings for this maintenance window?"
+  },
+  {
+    "id": "aws/maintenance_window/step_6a",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_6a",
+    "check_text": "Have you completed all required Run Command settings for this maintenance window?"
+  },
+  {
+    "id": "aws/maintenance_window/step_7",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_7",
+    "check_text": "Have you clicked Register Run command task?"
+  },
+  {
+    "id": "aws/maintenance_window/step_7a",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_7a",
+    "check_text": "Has the task registration been completed at least 24 hours before the maintenance window start time?"
+  },
+  {
+    "id": "aws/maintenance_window/step_8",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "maintenance_window",
+    "step": "step_8",
+    "check_text": "Has the maintenance window task completed?"
+  },
+  {
+    "id": "aws/schedule_automations/step_1",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_1",
+    "check_text": "Is the AWS Systems Manager console open?"
+  },
+  {
+    "id": "aws/schedule_automations/step_1a",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_1a",
+    "check_text": "Is the AWS Systems Manager console open at the Maintenance Windows page?"
+  },
+  {
+    "id": "aws/schedule_automations/step_2",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_2",
+    "check_text": "In the left navigation pane under Maintenance Windows, have you selected the maintenance window you want to register the task with?"
+  },
+  {
+    "id": "aws/schedule_automations/step_3",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_3",
+    "check_text": "Have you chosen Actions > Register Automation task?"
+  },
+  {
+    "id": "aws/schedule_automations/step_4",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_4",
+    "check_text": "Have you entered a Name and Description for the task?"
+  },
+  {
+    "id": "aws/schedule_automations/step_4a",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_4a",
+    "check_text": "Have you provided the automation task title and a clear task description?"
+  },
+  {
+    "id": "aws/schedule_automations/step_5",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_5",
+    "check_text": "Have you selected the Document (runbook) that defines the tasks to run, and chosen the correct Document version?"
+  },
+  {
+    "id": "aws/schedule_automations/step_6",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_6",
+    "check_text": "Have you specified a Task priority (1 = highest; same-priority tasks run in parallel)?"
+  },
+  {
+    "id": "aws/schedule_automations/step_7",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_7",
+    "check_text": "Does the selected runbook run tasks on resources?"
+  },
+  {
+    "id": "aws/schedule_automations/step_8",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_8",
+    "check_text": "Does the task specify targets?"
+  },
+  {
+    "id": "aws/schedule_automations/step_9",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_9",
+    "check_text": "Have you reviewed and filled in the Input Parameters section? (Some values auto-populate.)"
+  },
+  {
+    "id": "aws/schedule_automations/step_10",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_10",
+    "check_text": "Is an Automation Assume Role specified in the input parameters?"
+  },
+  {
+    "id": "aws/schedule_automations/step_11",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_11",
+    "check_text": "Have you selected a role in the IAM service role area to provide permissions for Systems Manager?"
+  },
+  {
+    "id": "aws/schedule_automations/step_12",
+    "domain": "cloud",
+    "org": "aws",
+    "sop": "schedule_automations",
+    "step": "step_12",
+    "check_text": "Have you clicked Register Automation task?"
+  },
+  {
+    "id": "nhs/sop_creation/step_1",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_1",
+    "check_text": "Has a member of staff or researcher identified the need for a new procedural document?"
+  },
+  {
+    "id": "nhs/sop_creation/step_2",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_2",
+    "check_text": "Have you checked existing R&D SOPs and Trust Guidelines/Policies to confirm the topic is not already addressed?"
+  },
+  {
+    "id": "nhs/sop_creation/step_3",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_3",
+    "check_text": "Is a full SOP appropriate, or would a Work Instruction (WI) be more suitable? (A WI provides step-by-step detail to support an associated SOP.)"
+  },
+  {
+    "id": "nhs/sop_creation/step_4",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_4",
+    "check_text": "Has a request been submitted to the Governance Oversight Group (GOG) via the QA team?"
+  },
+  {
+    "id": "nhs/sop_creation/step_5",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_5",
+    "check_text": "Is this SOP study-specific (relating to procedures for an individual research project not covered by existing R&D SOPs)?"
+  },
+  {
+    "id": "nhs/sop_creation/step_6",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_6",
+    "check_text": "Has the author received the current R&D SOP template from the QA team and been assigned an SOP number?"
+  },
+  {
+    "id": "nhs/sop_creation/step_7",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_7",
+    "check_text": "Has the draft SOP undergone internal review by appropriate staff for readability, conciseness, and accuracy?"
+  },
+  {
+    "id": "nhs/sop_creation/step_7a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_7a",
+    "check_text": "Has the draft SOP been reviewed by relevant staff for clarity, brevity, and correctness?"
+  },
+  {
+    "id": "nhs/sop_creation/step_8",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_8",
+    "check_text": "Is this a new SOP or a major update to an existing SOP?"
+  },
+  {
+    "id": "nhs/sop_creation/step_8a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_8a",
+    "check_text": "Has a request been submitted to the SOP Oversight Team (SOT) via the AB group?"
+  },
+  {
+    "id": "nhs/sop_creation/step_9",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_9",
+    "check_text": "Has GOG approved the SOP?"
+  },
+  {
+    "id": "nhs/sop_creation/step_9a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_9a",
+    "check_text": "Is the SOP approved by GOG?"
+  },
+  {
+    "id": "nhs/sop_creation/step_10",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_10",
+    "check_text": "Have all staff for whom the SOP is relevant completed self-directed training and documented it in their training record?"
+  },
+  {
+    "id": "nhs/sop_creation/step_10a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_10a",
+    "check_text": "Has the staff member involved in sample handling completed appropriate training, and is documented evidence of this training available?"
+  },
+  {
+    "id": "nhs/sop_creation/step_10b",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_10b",
+    "check_text": "Have all personnel who will be responsible for SOP implementation completed the required GCP and SOP-specific training within the last 24 months, and is this training documented in their staff training records?"
+  },
+  {
+    "id": "nhs/sop_creation/step_11",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "sop_creation",
+    "step": "step_11",
+    "check_text": "Is the SOP within its review date, and are there no deviations or legislative changes requiring an update?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_1",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_1",
+    "check_text": "Is this a regulated clinical trial or a clinical research project under the Trust's sponsorship that must meet the UK Policy Framework for Health and Social Care Research?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_1a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_1a",
+    "check_text": "Must this be treated as either a regulated clinical trial or a Trust-sponsored clinical research project subject to the UK Policy Framework for Health and Social Care Research?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_2",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_2",
+    "check_text": "Has a TMF been created using the R&D-provided template as soon as an outline protocol became available?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_3",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_3",
+    "check_text": "Has the CI (or delegate) identified and recorded the location(s) of all documentation forming the TMF, using the TMF Index (templates TMP13/TMP51/TMP75/TMP76)?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_4",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_4",
+    "check_text": "Is an electronic TMF (eTMF) being considered?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_5",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_5",
+    "check_text": "Is the TMF being actively maintained and securely stored (locked cabinet/room or secure server), accessible only by authorised personnel?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_6",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_6",
+    "check_text": "Are any essential documents (e.g. IB, PIS, Consent Forms) held in locations separate from the TMF (e.g. on a ward or electronic system like EDGE)?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_7",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_7",
+    "check_text": "Is this a multi-centre research study?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_8",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_8",
+    "check_text": "Has the CI established an ISF for each participating site, using the R&D ISF template?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_9",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_9",
+    "check_text": "Is the ISF being actively maintained and stored securely (locked cabinet/room or secure server), with access limited to authorised personnel?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_10",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_10",
+    "check_text": "Is the R&D Office maintaining a separate file with copies of essential approval documents for Trust Capacity & Capability governance?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_10a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_10a",
+    "check_text": "Is a separate file of essential approval documents being maintained by the R&D Office for Trust Capacity & Capability governance?"
+  },
+  {
+    "id": "nhs/establishing_and_maintaining_tmf_isf/step_11",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "establishing_and_maintaining_tmf_isf",
+    "step": "step_11",
+    "check_text": "Has the trial been formally closed and the final study report produced?"
+  },
+  {
+    "id": "nhs/expediting_urgent_public_health_research/step_1",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "expediting_urgent_public_health_research",
+    "step": "step_1",
+    "check_text": "Has the NIHR Local Clinical Research Network been informed by DHSC that urgent public health research is needed?"
+  },
+  {
+    "id": "nhs/expediting_urgent_public_health_research/step_1a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "expediting_urgent_public_health_research",
+    "step": "step_1a",
+    "check_text": "Has the NIHR Local Clinical Research Network been informed by DHSC that urgent public health research is needed within 12 months?"
+  },
+  {
+    "id": "nhs/expediting_urgent_public_health_research/step_2",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "expediting_urgent_public_health_research",
+    "step": "step_2",
+    "check_text": "Have the NIHR CRN SWP Urgent Public Health Research Delivery Plan (SOP 11), the Trust's Emergency Preparedness Policy, and R&D's Service Continuity Plan been followed to obtain permission to expedite?"
+  },
+  {
+    "id": "nhs/expediting_urgent_public_health_research/step_3",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "expediting_urgent_public_health_research",
+    "step": "step_3",
+    "check_text": "In the event of a pandemic, has an oversight group been convened (including the R&D Director, Associate R&D Director, Research Governance & Quality Manager, Lead Research Nurse, CRF Senior Nurse or Operations Manager, Senior Administrator, and Data Assistant)?"
+  },
+  {
+    "id": "nhs/expediting_urgent_public_health_research/step_4",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "expediting_urgent_public_health_research",
+    "step": "step_4",
+    "check_text": "Has the oversight group reviewed all open clinical studies and categorized them?"
+  },
+  {
+    "id": "nhs/expediting_urgent_public_health_research/step_5",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "expediting_urgent_public_health_research",
+    "step": "step_5",
+    "check_text": "Have categories (a) and (e) been prioritized, and has the Lead Nurse for Clinical Trials put a delivery plan in place allocating staff from the R&D Clinical Research Delivery Team?"
+  },
+  {
+    "id": "nhs/expediting_urgent_public_health_research/step_6",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "expediting_urgent_public_health_research",
+    "step": "step_6",
+    "check_text": "Have all participants enrolled in regulated or interventional trials with safety reporting been identified, and have protocol-related activities been planned to ensure all safety requirements are met?"
+  },
+  {
+    "id": "nhs/expediting_urgent_public_health_research/step_7",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "expediting_urgent_public_health_research",
+    "step": "step_7",
+    "check_text": "Has the oversight group determined the current severity level and applied the appropriate actions?"
+  },
+  {
+    "id": "nhs/expediting_urgent_public_health_research/step_8",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "expediting_urgent_public_health_research",
+    "step": "step_8",
+    "check_text": "Has more than 30% of staff in any team become unable to attend work?"
+  },
+  {
+    "id": "nhs/expediting_urgent_public_health_research/step_8a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "expediting_urgent_public_health_research",
+    "step": "step_8a",
+    "check_text": "Has more than 35% of staff in any team become unable to attend work?"
+  },
+  {
+    "id": "nhs/expediting_urgent_public_health_research/step_9",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "expediting_urgent_public_health_research",
+    "step": "step_9",
+    "check_text": "Are regular oversight group reviews occurring, pharmacy/support service communications being maintained, and the action tracker being updated?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_1",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_1",
+    "check_text": "Has the staff member involved in sample handling completed appropriate training, and is documented evidence of this training available?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_2",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_2",
+    "check_text": "Is the staff member wearing the required personal protective equipment (PPE) \u2014 gloves, apron, and eye protection (safety goggles)?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_3",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_3",
+    "check_text": "Are the correct collection containers being used (Sponsor-supplied or as defined in the study Protocol/Laboratory Manual)?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_3a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_3a",
+    "check_text": "Are the correct collection containers being used (Sponsor-supplied or as defined in the study Protocol/Laboratory Manual)?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_4",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_4",
+    "check_text": "Have you followed the study-specific sample processing instructions from the Protocol and/or Laboratory Manual?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_4a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_4a",
+    "check_text": "Have you also followed the lab-specific sample processing instructions from the Protocol and/or Organizational Manual?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_5",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_5",
+    "check_text": "Are all sample tubes correctly labelled according to the study Protocol/Laboratory Manual, cross-referenced with the study subject and study-specific documentation, and was labelling done while still with the participant?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_6",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_6",
+    "check_text": "Has all waste material been placed in the correct bin (sharps bin or clinical waste bin) in compliance with the applicable Waste Management Policy (Eastern or Northern Services)?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_7",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_7",
+    "check_text": "Are samples stored according to the study Protocol/Laboratory Manual instructions (correct temperature, correct storage box, correctly labelled in waterproof ink with study name/number/box number/contact details)?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_7a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_7a",
+    "check_text": "Is each medicinal sample kept in approved packaging and placed in the appropriate controlled storage container before transport or long-term storage?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_8",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_8",
+    "check_text": "Do samples need to be transported within the local site (e.g. from collection point to centrifuge lab or freezer)?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_9",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_9",
+    "check_text": "Has any sample tube been damaged during transport?"
+  },
+  {
+    "id": "nhs/management_of_research_samples/step_10",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "management_of_research_samples",
+    "step": "step_10",
+    "check_text": "Do samples need to be shipped to the Sponsor or an external lab?"
+  },
+  {
+    "id": "nhs/transportation_of_temperature_sensitive/step_1",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "transportation_of_temperature_sensitive",
+    "step": "step_1",
+    "check_text": "Has the staff member who will collect and transport the temperature-sensitive medicinal product (MP) received study-specific training, and is this recorded in the study training log?"
+  },
+  {
+    "id": "nhs/transportation_of_temperature_sensitive/step_2",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "transportation_of_temperature_sensitive",
+    "step": "step_2",
+    "check_text": "Has the Pharmacy Clinical Trials Manager confirmed that the temperature-sensitive MP received for the trial is suitable for use?"
+  },
+  {
+    "id": "nhs/transportation_of_temperature_sensitive/step_3",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "transportation_of_temperature_sensitive",
+    "step": "step_3",
+    "check_text": "Does the MP appear undamaged?"
+  },
+  {
+    "id": "nhs/transportation_of_temperature_sensitive/step_4",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "transportation_of_temperature_sensitive",
+    "step": "step_4",
+    "check_text": "Is the MP in its original packaging and placed in a suitable cool pack/box (NOT a domestic cool box)?"
+  },
+  {
+    "id": "nhs/transportation_of_temperature_sensitive/step_4a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "transportation_of_temperature_sensitive",
+    "step": "step_4a",
+    "check_text": "Are medicinal products stored according to protocol instructions (correct temperature, correct storage container, and correct transport packaging)?"
+  },
+  {
+    "id": "nhs/transportation_of_temperature_sensitive/step_5",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "transportation_of_temperature_sensitive",
+    "step": "step_5",
+    "check_text": "Has a maximum/minimum calibrated temperature probe or Sponsor-approved temperature recording device been placed in the middle of the cool pack/box, with the display panel visible outside?"
+  },
+  {
+    "id": "nhs/transportation_of_temperature_sensitive/step_5a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "transportation_of_temperature_sensitive",
+    "step": "step_5a",
+    "check_text": "Does the medicinal product handling section correctly identify all records with proper trial identifier, product name, storage class, handling group, and container size for transport, and is the tracking class correctly populated?"
+  },
+  {
+    "id": "nhs/transportation_of_temperature_sensitive/step_6",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "transportation_of_temperature_sensitive",
+    "step": "step_6",
+    "check_text": "Is the temperature inside the container within the required range specified by the manufacturer/study protocol?"
+  },
+  {
+    "id": "nhs/transportation_of_temperature_sensitive/step_6a",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "transportation_of_temperature_sensitive",
+    "step": "step_6a",
+    "check_text": "Determine whether the samples need to be transported within the local site (e.g. from collection point to centrifuge lab or freezer)."
+  },
+  {
+    "id": "nhs/transportation_of_temperature_sensitive/step_7",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "transportation_of_temperature_sensitive",
+    "step": "step_7",
+    "check_text": "Minimize the time between removing the MP from cold storage and use. Transport is in progress."
+  },
+  {
+    "id": "nhs/transportation_of_temperature_sensitive/step_8",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "transportation_of_temperature_sensitive",
+    "step": "step_8",
+    "check_text": "Is the temperature inside the container still within the required range, prior to administering the medication?"
+  },
+  {
+    "id": "nhs/transportation_of_temperature_sensitive/step_9",
+    "domain": "medical",
+    "org": "nhs",
+    "sop": "transportation_of_temperature_sensitive",
+    "step": "step_9",
+    "check_text": "Is the MP being dispensed and administered to the participant?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_1",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_1",
+    "check_text": "Has an invoice been received (via mail, email, or electronic invoicing system) and directed to the accounts payable department?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_2",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_2",
+    "check_text": "Has the invoice been logged into the accounting system with a unique reference number, including: invoice date, vendor name, invoice amount, due date, and related purchase order number (if applicable)?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_3",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_3",
+    "check_text": "Has the invoice been matched with the corresponding purchase order and delivery receipt to confirm goods/services were received as ordered?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_4",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_4",
+    "check_text": "Do the quantities and prices on the invoice match those on the purchase order?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_4a",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_4a",
+    "check_text": "Are there discrepancies or unauthorized charges on the invoice?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_4b",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_4b",
+    "check_text": "Do the quantities and prices on the invoice exceed 90% of the purchase order?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_5",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_5",
+    "check_text": "Is the invoice amount accurate and within the agreed-upon payment terms?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_6",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_6",
+    "check_text": "Has the relevant department head (or authorized personnel) reviewed and approved the invoice?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_7",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_7",
+    "check_text": "Has the finance manager (or designated approver) conducted a final review and approved the invoice for payment?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_8",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_8",
+    "check_text": "Has the payment been scheduled based on the invoice due date and cash flow management practices?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_8a",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_8a",
+    "check_text": "Has the payment been also scheduled based on the internal budgeting timelines and forecast management practices?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_9",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_9",
+    "check_text": "Has the payment been issued via the correct method (EFT, check, or credit card per vendor preference and company policy), with accurate details (vendor bank account, payment amount, payment reference)?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_10",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_10",
+    "check_text": "Has the transaction been recorded in the accounting system, marking the invoice as paid, with: payment date, method of payment, payment reference number, and the account from which payment was made?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_11",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_11",
+    "check_text": "Has the payment been reconciled with the bank statement to ensure accuracy?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_12",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_12",
+    "check_text": "Has the paid invoice been filed along with payment confirmation and related documents (both physical and electronic copies), retained for a minimum of seven years or as required by law?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_12a",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_12a",
+    "check_text": "Has the paid invoice been filed along with payment confirmation and related documents (both physical and electronic copies), retained for a minimum of 84 months or as required by law?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_13",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_13",
+    "check_text": "Is it the end of the month?"
+  },
+  {
+    "id": "color_creek/accounts_payable/step_14",
+    "domain": "doc_verification",
+    "org": "color_creek",
+    "sop": "accounts_payable",
+    "step": "step_14",
+    "check_text": "Is it the end of the fiscal year?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_1",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_1",
+    "check_text": "Is payment being requested for an external vendor, and is the purchase NOT made through a Purchase Order, PCard, or Electronic Vendor Invoicing (EVI)?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_2",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_2",
+    "check_text": "Has the vendor's original invoice been received (not a duplicate or copy)?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_3",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_3",
+    "check_text": "Does the vendor invoice meet all of the following requirements? York University's name appears on the invoice. Invoice is addressed to the correct York University campus address. Vendor's HST registration number is displayed (or small supplier exemption is noted)."
+  },
+  {
+    "id": "york_u/payment_requisition/step_3a",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_3a",
+    "check_text": "Has the vendor obtained a duly signed Letter of Authorization from the department (with date, full name, and signature) before submitting the invoice package?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_3b",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_3b",
+    "check_text": "Has the invoice been matched with the corresponding purchase order and delivery receipt to confirm goods/services were received as ordered?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_4",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_4",
+    "check_text": "Has the vendor's name been entered in the \"Pay To\" field exactly as it appears on the invoice?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_5",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_5",
+    "check_text": "Has the vendor's mailing address (where payment should be sent) been entered exactly as it appears on the invoice?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_6",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_6",
+    "check_text": "Has a detailed description of the goods/services purchased been entered, including references to supporting documentation (e.g. invoice number)? If goods/services are for resale, has the third party been identified?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_6a",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_6a",
+    "check_text": "Has the request included a clear explanation of the purchased goods/services with supporting references, and identified any resale third party where applicable?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_7",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_7",
+    "check_text": "Has the correct currency (Canadian or U.S. funds) been indicated, matching the denomination on the vendor's invoice?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_8",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_8",
+    "check_text": "Has the \"Chartfield(s) To Be Charged\" section been completed to codify how charges should appear in the general ledger? If multiple pages are needed, is each page marked \"Page # of #\"?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_9",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_9",
+    "check_text": "Has the appropriate reason been selected for why this payment is not on a Purchase Order?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_9a",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_9a",
+    "check_text": "Has the appropriate reason been selected for why this payment is not on a Purchase Order?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_10",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_10",
+    "check_text": "Has the individual who prepared the Payment Requisition printed their name and signed the \"Prepared by\" field?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_11",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_11",
+    "check_text": "Has the signing authority on all cost centres being charged read the certification and signed the \"Approved by\" field? Is the approver a different person from the preparer?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_12",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_12",
+    "check_text": "Has the approver confirmed all of the following? Goods/services have been received. Vendor charges are appropriate. Invoice meets York's standards. Form is complete and diligent. Approver has signing authority on all charged cost centres. Expenditures are valid and comply with University policies (Procurement and Conflict of Interest). Charged cost centres have sufficient funds."
+  },
+  {
+    "id": "york_u/payment_requisition/step_13",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_13",
+    "check_text": "Has the completed Payment Requisition (with original invoice attached) been sent to Accounts Payable at 4747 Keele, Finance Department?"
+  },
+  {
+    "id": "york_u/payment_requisition/step_14",
+    "domain": "doc_verification",
+    "org": "york_u",
+    "sop": "payment_requisition",
+    "step": "step_14",
+    "check_text": "Is the Payment Requisition complete (all fields filled, original invoice attached, all signatures obtained, procurement section completed)?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_1",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_1",
+    "check_text": "Has the LSP (Logistics Service Provider) received the Transport Order by email (PDF) along with shipping point details and requirements (Annex 3)?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_2",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_2",
+    "check_text": "Has the LSP reviewed the order for additional instructions (timeslot booking, opening hours, temperature ranges, tail lift, additional equipment) and confirmed compliance with local legislation at the shipping point?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_2a",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_2a",
+    "check_text": "Has the LSP checked the order for any special requirements (such as timeslot scheduling, site hours, temperature conditions, tail lift needs, or extra equipment) and verified adherence to operational guidelines at the delivery location?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_3",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_3",
+    "check_text": "Is the driver wearing the correct PPE as per Annex 6 before entering the shipping site?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_4",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_4",
+    "check_text": "Has the LSP sent readiness-for-loading information to Odyssey one day before the scheduled loading date (or same day if loading is after 12:30 PM), including the planned loading time and all required details?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_5",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_5",
+    "check_text": "Are the goods ready for loading at the shipping site?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_6",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_6",
+    "check_text": "Is this shipment classified as an expedite shipment?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_7",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_7",
+    "check_text": "Has the LSP communicated the estimated unloading time to Odyssey no later than one day before scheduled unloading (or same day if unloading is after 12:30 PM)?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_8",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_8",
+    "check_text": "Will the delivery arrive by the scheduled delivery date?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_9",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_9",
+    "check_text": "Does the shipment cross borders outside the EU?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_10",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_10",
+    "check_text": "Has the driver obtained a duly signed POD/CMR from the consignee (with date, full name, and signature) before leaving the unloading site?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_10a",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_10a",
+    "check_text": "Before departing the unloading site, has the driver secured a properly completed POD/CMR from the consignee, including the date, the consignee's full printed name, and an authorized signature confirming receipt of the goods?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_11",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_11",
+    "check_text": "Has the LSP sent a delivery confirmation email to Odyssey immediately after unloading?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_12",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_12",
+    "check_text": "Has the signed POD/CMR been emailed to swiftsolutions@odysseylogistics.com? (Must be available within 24 hours of delivery if requested.)"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_13",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_13",
+    "check_text": "Has the invoice been prepared and emailed (PDF, named SCAC + invoice number) to swiftsolutionsPayments@odysseylogistics.com, after the delivery has occurred and within 14 days of delivery?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_13a",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_13a",
+    "check_text": "Has the invoice been prepared and emailed (PDF, named SCAC + invoice number) to swiftsolutionsPayments@odysseylogistics.com, after the delivery has occurred and within 336 hours of delivery?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_14",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_14",
+    "check_text": "Has Odyssey identified an error in the invoice?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_15",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_15",
+    "check_text": "Did any non-conformance occur during this shipment (damage, accident, incident, near-miss, failure to comply with SOP requirements)?"
+  },
+  {
+    "id": "odyssey/transport_logistics_and_invoicing/step_16",
+    "domain": "doc_verification",
+    "org": "odyssey",
+    "sop": "transport_logistics_and_invoicing",
+    "step": "step_16",
+    "check_text": "Did a chemical spill, leak, fire, exposure, or accident occur during transit?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_1",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_1",
+    "check_text": "Has the Utility Relocation Contract been executed?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_2",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_2",
+    "check_text": "Has the Regional Utilities Manager/Team Lead scheduled a reimbursement meeting (remote or in-person) with the Utility Representatives and their Accounting Representatives?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_3",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_3",
+    "check_text": "Has a Reimbursement Packet been sent to the Utility Representative and their Accounting Representative (via US mail or email) before the meeting?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_4",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_4",
+    "check_text": "Has the meeting been held, including a presentation covering all packet items, and have all necessary contact details for the Utility's Accounts Receivable department been obtained?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_5",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_5",
+    "check_text": "Has the Utility begun submitting invoices for reimbursement?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_6",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_6",
+    "check_text": "Does the submitted invoice meet all requirements on the current Finance Utilities Relocation Invoice Requirements checklist (completeness, correct format, all required supporting documentation)?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_6a",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_6a",
+    "check_text": "Has the Utility submitted a corrected invoice?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_6b",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_6b",
+    "check_text": "Has the submitted invoice been reviewed and verified to ensure it fully complies with at least 80% of the current Finance Utilities Relocation Invoice Requirements checklist, including completeness, proper formatting, and inclusion of all required supporting documentation?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_7",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_7",
+    "check_text": "Has the Regional Utilities Manager/Team Lead performed a final review and approved the invoice for processing?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_8",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_8",
+    "check_text": "Has the Receipt and Voucher been correctly created in Edison using the proper business unit, correct Utility address, correct service dates, and with all PII removed from the invoice and supporting documents?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_9",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_9",
+    "check_text": "Has TDOT Finance been notified to fund the purchase order?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_10",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_10",
+    "check_text": "Has all invoice information been fully updated in IRIS, paid invoice attachments uploaded, and the project tracking spreadsheet maintained?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_11",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_11",
+    "check_text": "Is the Utility adhering to all executed contract terms regarding reimbursement?"
+  },
+  {
+    "id": "tenessee_dot/utilities_invoice_sop/step_11a",
+    "domain": "doc_verification",
+    "org": "tenessee_dot",
+    "sop": "utilities_invoice_sop",
+    "step": "step_11a",
+    "check_text": "Is the Utility retaining all supporting documentation for 36 months after final reimbursement, and continuing to meet contract reimbursement terms?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_1",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_1",
+    "check_text": "Does the \"Ship From\" box on the BOL show the correct Gemini shipping location?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_2",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_2",
+    "check_text": "Is the \"Ship To (Destination)\" address the correct physical address of the customer (never a PO Box)?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_3",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_3",
+    "check_text": "Is the \"Freight Charge Terms\" section filled in with one of: Prepaid & Add, Paid, or Collect? Is the Pro Number sticker NOT covering the freight term?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_4",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_4",
+    "check_text": "Is the PO number listed under \"Customer Order Number\" (if applicable \u2014 not all BOLs have one)?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_5",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_5",
+    "check_text": "Does the shipment contain any products classified as hazardous by DOT regulations?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_6",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_6",
+    "check_text": "Do the individual item weights in the \"Carrier Information\" section add up to the total weight at the bottom, including pallet weight (40 lbs per pallet)?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_7",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_7",
+    "check_text": "Does the sum of all pieces match the total piece count at the bottom of the \"Quantity Section\"?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_8",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_8",
+    "check_text": "Is the outermost packaging of all hazardous materials labelled correctly per DOT standards?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_9",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_9",
+    "check_text": "Is the aggregate gross weight of all hazardous materials 454 kg (1,001 lbs) or more?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_10",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_10",
+    "check_text": "Does the commodity description section correctly identify all materials with proper UN description, commodity, class, packing group, and container size for hazardous materials (or commodity and container size for non-hazardous)? Is the freight class correctly populated?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_10a",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_10a",
+    "check_text": "Does the commodity description section accurately identify the materials with the required classification details (as applicable for hazardous or non-hazardous goods), and is the freight class correctly specified?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_11",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_11",
+    "check_text": "Are the freight terms \"Third Party\"?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_11a",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_11a",
+    "check_text": "Has the carrier collected complete delivery proof documentation with consignee date, printed name, and signature before shipment release records are finalized?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_12",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_12",
+    "check_text": "Does the sales order indicate any special delivery needs (lift gate, inside delivery, residential delivery, limited access fee, freeze protection)?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_13",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_13",
+    "check_text": "Has the Gemini employee signed and dated the \"Shipper Signature/Date\" section legibly?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_14",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_14",
+    "check_text": "Are the \"Trailer Loaded\" and \"Freight Counted\" sections filled in correctly? Has the freight been counted by both the shipper and the carrier? Does the driver have proper certifications to transport the products?"
+  },
+  {
+    "id": "gemini/understanding_bills_of_lading/step_15",
+    "domain": "doc_verification",
+    "org": "gemini",
+    "sop": "understanding_bills_of_lading",
+    "step": "step_15",
+    "check_text": "Has the driver been offered placards (and given the correct ones if needed)? Has the driver signed and dated the \"Carrier Signature/Pickup Date\" section, including the trailer number?"
+  }
+]

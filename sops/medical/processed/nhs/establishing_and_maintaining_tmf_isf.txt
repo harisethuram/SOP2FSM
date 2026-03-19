@@ -5,10 +5,10 @@ Step 1: Determine if the study requires a TMF.
   - If yes: Go to Step 1a.
   - If no: No TMF is required under this SOP. END.
 
-Step 1a: Confirm personnel training.
-  Check: Have all personnel who will be responsible for establishing and maintaining the TMF and ISF completed the required GCP and SOP-specific training, and is this training documented in their staff training records?
+Step 1a: Mutation of Step 1. [M6]
+  Check: Must this be treated as either a regulated clinical trial or a Trust-sponsored clinical research project subject to the UK Policy Framework for Health and Social Care Research
   - If yes: Go to Step 2.
-  - If no: Ensure all relevant personnel complete the required training and update their training records before proceeding.
+  - If no: Ensure all relevant personnel complete required training and document it before proceeding.
 
 Step 2: Establish the TMF.
   Check: Has a TMF been created using the R&D-provided template as soon as an outline protocol became available?
@@ -52,13 +52,13 @@ Step 9: Maintain and store the ISF.
 
 Step 10: Maintain the R&D (Sponsor) File.
   Check: Is the R&D Office maintaining a separate file with copies of essential approval documents for Trust Capacity & Capability governance?
-  - If yes: Go to Step 10a.
-  - If no: The R&D Office must establish and maintain this file. Where the Trust is Sponsor, additional documents may be held to ensure compliance with Sponsor requirements. Go to Step 10a.
+  - If yes: Go to Step 19a.
+  - If no: The R&D Office must establish and maintain this file. Where the Trust is Sponsor, additional documents may be held to ensure compliance with Sponsor requirements. Go to Step 11.
 
-Step 10a: Conduct periodic QA compliance review.
-  Check: Has the QA team reviewed the TMF/ISF to confirm ongoing compliance with R&D governance standards and GCP requirements, with no unresolved deviations?
+Step 10a: Maintain the R&D (Sponsor) File.
+  Check: Is a separate file of essential approval documents being maintained by the R&D Office for Trust Capacity & Capability governance?
   - If yes: Go to Step 11.
-  - If no: Arrange for the QA team to conduct a compliance review. Address any identified deviations or gaps before proceeding.
+  - If no: The R&D Office must establish and maintain this file. Where the Trust is Sponsor, additional documents may be held to ensure compliance with Sponsor requirements. Go to Step 11.
 
 Step 11: Close the study and archive.
   Check: Has the trial been formally closed and the final study report produced?

@@ -23,17 +23,17 @@ Step 4: Verify quantities and pricing.
 Step 4a: Resolve discrepancies.
   Check: Are there discrepancies or unauthorized charges on the invoice?
   - If yes: Contact the vendor immediately to resolve the issue. Do NOT process the payment until resolved. Return to Step 4 after resolution.
-  - If no: Go to Step 5.
+  - If no: Go to Step 4b.
+
+Step 4b: Repeated quantity verification with alternative transition. [M12]
+  Check: Do the quantities and prices on the invoice exceed 90% of the purchase order?
+  - If yes: Go to Step 6.
+  - If no: Return to Step 4a for discrepancy resolution.
 
 Step 5: Verify invoice amount and payment terms.
   Check: Is the invoice amount accurate and within the agreed-upon payment terms?
   - If yes: Go to Step 5a.
   - If no: Contact the vendor to resolve. Return to Step 5 after resolution.
-
-Step 5a: Cross-check invoice line items against delivery records.
-  Check: Have all individual line items on the invoice been verified against the delivery receipt or service completion records to confirm the billed quantities and amounts match what was actually delivered or performed?
-  - If yes: Go to Step 6.
-  - If no: Identify and document any discrepancies. Contact the vendor to resolve before proceeding.
 
 Step 6: Obtain department head approval.
   Check: Has the relevant department head (or authorized personnel) reviewed and approved the invoice?
@@ -47,8 +47,13 @@ Step 7: Obtain finance manager approval.
 
 Step 8: Schedule the payment.
   Check: Has the payment been scheduled based on the invoice due date and cash flow management practices?
-  - If yes: Go to Step 9.
+  - If yes: Go to Step 8a.
   - If no: Schedule the payment. Prioritize invoices with early payment discounts. Group payments by due date and vendor.
+
+Step 8a: False Mutation. [FP6]
+  Check: Has the payment been also scheduled based on the internal budgeting timelines and forecast management practices?
+  - If yes: Go to Step 9.
+  - If no: Update the payment scheduling calendar and proceed once conflicts are resolved.
 
 Step 9: Process the payment.
   Check: Has the payment been issued via the correct method (EFT, check, or credit card per vendor preference and company policy), with accurate details (vendor bank account, payment amount, payment reference)?
@@ -67,8 +72,13 @@ Step 11: Reconcile with bank statement.
 
 Step 12: File documentation.
   Check: Has the paid invoice been filed along with payment confirmation and related documents (both physical and electronic copies), retained for a minimum of seven years or as required by law?
-  - If yes: Go to Step 13.
+  - If yes: Go to Step 12a.
   - If no: File all documents appropriately.
+
+Step 12a: Numeric-equivalent retention wording.
+  Check: Has the paid invoice been filed along with payment confirmation and related documents (both physical and electronic copies), retained for a minimum of 84 months or as required by law?
+  - If yes: Go to Step 13.
+  - If no: Retain the records for the required retention window before closure.
 
 Step 13: Month-end reconciliation.
   Check: Is it the end of the month?

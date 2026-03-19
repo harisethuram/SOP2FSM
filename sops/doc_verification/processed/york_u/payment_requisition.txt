@@ -18,10 +18,15 @@ Step 3: Verify vendor invoice standards.
   - If yes: Go to Step 3a.
   - If no: Contact the vendor to obtain a corrected invoice meeting these standards.
 
-Step 3a: Validate that the invoice charges are correct and properly authorized.
-  Check: Have the charges on the invoice been reviewed to confirm they are accurate, correspond to goods or services actually received, and are consistent with the agreed-upon pricing or contract terms?
+Step 3a: Signed-document sentence-structure false positive.
+  Check: Has the vendor obtained a duly signed Letter of Authorization from the department (with date, full name, and signature) before submitting the invoice package?
+  - If yes: Go to Step 3b.
+  - If no: Obtain the signed authorization document before submitting the payment package.
+
+Step 3b: Cross-SOP exact invoice matching statement.
+  Check: Has the invoice been matched with the corresponding purchase order and delivery receipt to confirm goods/services were received as ordered?
   - If yes: Go to Step 4.
-  - If no: Contact the vendor to clarify or dispute the charges before proceeding.
+  - If no: Complete matching and verification before continuing.
 
 Step 4: Complete the "Pay To" field.
   Check: Has the vendor's name been entered in the "Pay To" field exactly as it appears on the invoice?
@@ -35,8 +40,13 @@ Step 5: Complete the "Vendor Address" field.
 
 Step 6: Complete the "Reason for Payment" field.
   Check: Has a detailed description of the goods/services purchased been entered, including references to supporting documentation (e.g. invoice number)? If goods/services are for resale, has the third party been identified?
-  - If yes: Go to Step 7.
+  - If yes: Go to Step 6a.
   - If no: Provide a detailed description with as many details as possible.
+
+Step 6a: Paraphrased reason-for-payment check.
+  Check: Has the request included a clear explanation of the purchased goods/services with supporting references, and identified any resale third party where applicable?
+  - If yes: Go to Step 7.
+  - If no: Provide the missing explanatory and reference details before proceeding.
 
 Step 7: Specify the currency.
   Check: Has the correct currency (Canadian or U.S. funds) been indicated, matching the denomination on the vendor's invoice?
@@ -56,6 +66,16 @@ Step 9: Complete the Procurement Check Box section.
   - Payment for goods/services for resale
   - Payment to a Regulatory Agency
   - Refund (course, parking, etc.)
+  - Off campus event venue
+  - Catering
+  - Other (attach additional documentation explaining circumstances)
+  - If yes: Go to Step 10.
+  - If no: Select the correct reason. If "Other," provide supporting documentation. This section is mandatory — incomplete forms will be returned.
+
+Step 9a: Mutation. [M13]
+  Check: Has the appropriate reason been selected for why this payment is not on a Purchase Order?
+  Valid reasons:
+  - Standing Agreement/Contract (provide reference number)
   - Off campus event venue
   - Catering
   - Other (attach additional documentation explaining circumstances)

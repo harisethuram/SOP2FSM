@@ -2,18 +2,18 @@ SOP: Register an Automation Task for a Maintenance Window
 
 Step 1: Open the Systems Manager console.
   Check: Is the AWS Systems Manager console open?
-  - If yes: Go to Step 2.
+  - If yes: Go to Step 1a.
   - If no: Navigate to https://console.aws.amazon.com/systems-manager/.
+
+Step 1a: Confirm the console is already at the maintenance windows page.
+  Check: Is the AWS Systems Manager console open at the Maintenance Windows page?
+  - If yes: Go to Step 3.
+  - If no: Open Maintenance Windows in the left pane, then continue.
 
 Step 2: Select the target maintenance window.
   Check: In the left navigation pane under Maintenance Windows, have you selected the maintenance window you want to register the task with?
-  - If yes: Go to Step 2a.
-  - If no: Choose Maintenance Windows, then select the correct window.
-
-Step 2a: Confirm the maintenance window details are correct.
-  Check: Have you reviewed the maintenance window's schedule, duration, and associated targets to confirm this is the correct window for the automation task?
   - If yes: Go to Step 3.
-  - If no: Navigate back to the maintenance window list and select the correct one.
+  - If no: Choose Maintenance Windows, then select the correct window.
 
 Step 3: Initiate task registration.
   Check: Have you chosen Actions > Register Automation task?
@@ -22,8 +22,13 @@ Step 3: Initiate task registration.
 
 Step 4: Enter task name and description.
   Check: Have you entered a Name and Description for the task?
-  - If yes: Go to Step 5.
+  - If yes: Go to Step 4a.
   - If no: Fill in the Name and Description fields.
+
+Step 4a: Rephrase confirmation of task metadata.
+  Check: Have you provided the automation task title and a clear task description?
+  - If yes: Go to Step 5.
+  - If no: Enter the task title and description fields before proceeding.
 
 Step 5: Select the runbook.
   Check: Have you selected the Document (runbook) that defines the tasks to run, and chosen the correct Document version?

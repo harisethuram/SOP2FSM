@@ -15,25 +15,35 @@ Step 3: Inspect the MP before transport.
   - If yes: Go to Step 4.
   - If no (MP appears damaged): Do NOT administer the MP. Return it unused to the Clinical Trials Pharmacy Department, who will advise on next steps. END.
 
-Step 4: Confirm the MP is in its original packaging.
-  Check: Is the medicinal product still in the manufacturer's original, sealed packaging?
+Step 4: Pack the MP for transport.
+  Check: Is the MP in its original packaging and placed in a suitable cool pack/box (NOT a domestic cool box)?
   - If yes: Go to Step 4a.
-  - If no: Do not remove the MP from its original packaging. If the original packaging is missing or compromised, contact the Clinical Trials Pharmacy Department for guidance before proceeding.
+  - If no: Ensure the MP is in its original packaging. Place it in a suitable cool pack/box. If transporting by vehicle (e.g. home visit), place the cool pack/box in the boot of the car, not on a car seat.
 
-Step 4a: Place the MP in a suitable transport container.
-  Check: Has the MP (in its original packaging) been placed in an appropriate cool pack/box that is NOT a domestic cool box?
+Step 4a: Storage-and-container phrasing aligned with research sample SOP. [M11]
+  Check: Are medicinal products stored according to protocol instructions (correct temperature, correct storage container, and correct transport packaging)?
   - If yes: Go to Step 5.
-  - If no: Place the MP in a suitable cool pack/box. If transporting by vehicle (e.g. home visit), the cool pack/box must be placed in the boot of the car, not on a car seat.
+  - If no: Adjust storage and transport setup to meet protocol instructions before continuing.
 
 Step 5: Place temperature monitoring device.
   Check: Has a maximum/minimum calibrated temperature probe or Sponsor-approved temperature recording device been placed in the middle of the cool pack/box, with the display panel visible outside?
-  - If yes: Go to Step 6.
+  - If yes: Go to Step 5a.
   - If no: Place the device correctly. It must remain inside the cool pack/box for the entire journey.
+
+Step 5a: Product information sentence-structure false positive.
+  Check: Does the medicinal product handling section correctly identify all records with proper trial identifier, product name, storage class, handling group, and container size for transport, and is the tracking class correctly populated?
+  - If yes: Go to Step 6.
+  - If no: Correct the handling and tracking descriptors before transport.
 
 Step 6: Check temperature before departure.
   Check: Is the temperature inside the container within the required range specified by the manufacturer/study protocol?
-  - If yes: Record the temperature (if required by Sponsor instructions). Go to Step 7.
+  - If yes: Record the temperature (if required by Sponsor instructions). Go to Step 6a.
   - If no: Do NOT proceed with transport. Contact the Clinical Trials Pharmacy Department for advice. END.
+
+Step 6a: Transport samples locally (if needed). [M10]
+  Check: Determine whether the samples need to be transported within the local site (e.g. from collection point to centrifuge lab or freezer).
+  - If yes: Wrap the sample in a clear plastic bag and seal it. Place the bagged sample in a leak-proof plastic container and close the lid (ideally transparent enough to see contents). Go to Step 7.
+  - If no: Stay here.
 
 Step 7: Transport the MP.
   Check: Minimize the time between removing the MP from cold storage and use. Transport is in progress.

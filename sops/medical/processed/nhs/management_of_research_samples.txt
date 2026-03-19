@@ -12,13 +12,23 @@ Step 2: Prepare for sample processing.
 
 Step 3: Collect and process samples.
   Check: Are the correct collection containers being used (Sponsor-supplied or as defined in the study Protocol/Laboratory Manual)?
-  - If yes: Go to Step 4.
+  - If yes: Go to Step 3a.
   - If no: Obtain the correct containers before collecting samples.
 
-Step 4: Process samples according to study protocol.
-  Check: Have you followed the study-specific sample processing instructions from the Protocol and/or Laboratory Manual (e.g. centrifuge blood into plasma/serum, transfer urine via pipette, store DNA swabs in sterile bags)?
+Step 3a: Duplicate container verification at a different transition point.
+  Check: Are the correct collection containers being used (Sponsor-supplied or as defined in the study Protocol/Laboratory Manual)?
   - If yes: Go to Step 5.
+  - If no: Re-check container selection and obtain approved containers before continuing.
+
+Step 4: Process samples according to study protocol.
+  Check: Have you followed the study-specific sample processing instructions from the Protocol and/or Laboratory Manual?
+  - If yes: Go to Step 4a.
   - If no: Follow the study-specific instructions. Go to Step 5 once processing is complete.
+
+Step 4a: Compliance checklist wording variant. [FP4]
+  Check: Have you also followed the lab-specific sample processing instructions from the Protocol and/or Organizational Manual?
+  - If yes: Go to Step 5.
+  - If no: Correct missing documentation and checklist items before proceeding.
 
 Step 5: Label sample tubes.
   Check: Are all sample tubes correctly labelled according to the study Protocol/Laboratory Manual, cross-referenced with the study subject and study-specific documentation, and was labelling done while still with the participant?
@@ -35,15 +45,10 @@ Step 7: Store samples.
   - If yes: Go to Step 7a.
   - If no: Store samples correctly. Use sample grid boxes with lids for serum/plasma; seal other samples in clear plastic marsupial bags. Complete a CRF Freezer Storage Application form if storing in CRF freezer storage. Complete study sample logs as required.
 
-Step 7a: Verify labelling of stored samples.
-  Check: Have all stored sample containers been checked to confirm that labels include the study name, participant identifier, sample type, collection date, and storage conditions, and that all labels are legible and securely attached?
-  - If yes: Go to Step 7b.
-  - If no: Re-label or replace any labels that are missing, illegible, or incomplete before proceeding.
-
-Step 7b: Confirm storage area access controls.
-  Check: Is the sample storage area secured with restricted access limited to authorised study personnel only, and is an access log maintained?
+Step 7a: Cross-SOP packaging/storage paraphrase. [M9]
+  Check: Is each medicinal sample kept in approved packaging and placed in the appropriate controlled storage container before transport or long-term storage?
   - If yes: Go to Step 8.
-  - If no: Ensure the storage area is locked or otherwise access-controlled, and establish an access log if one does not exist.
+  - If no: Repackage and place samples in the approved storage container before proceeding.
 
 Step 8: Transport samples locally (if needed).
   Check: Do samples need to be transported within the local site (e.g. from collection point to centrifuge lab or freezer)?
